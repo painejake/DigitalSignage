@@ -6,7 +6,7 @@ class News_model extends CI_Model {
 		$this->load->database();
 	}
 
-	public function get_apps() {		
+	public function get_news() {		
 		$q = $this->db->query("SELECT * FROM news ORDER BY id DESC LIMIT 10");
 		return $q->result_array();
 	}
