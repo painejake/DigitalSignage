@@ -12,7 +12,7 @@ class News_model extends CI_Model {
 	}
 
 	public function create_entry() {
-		$this->load->helper('url');
+		//$this->load->helper('url');
 
 		$data = array(
 			'title'			=> $this->input->post('title'),
