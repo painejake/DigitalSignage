@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -23,21 +25,12 @@
 
         <!-- Add your site or application content here -->
         <section class="wrap">
-            <div class="login">
-                <header>
-                    <h2>Login to dashboard</h2>
-                </header>
-                <form>
-                    <input type="input" id="username" name="username" placeholder="Username" /><br />
-
-                    <input type="password" id="passowrd" name="password" placeholder="Password" /><br />
-
-                    <input class="button" type="submit" name="submit" value="Login" />
-                </form>
-                <footer>
-                    <p><a href="#">Forgot your password?</a></p>
-                </footer>
-            </div>
+            <article class="bbcfeed">
+                <!-- bbc news feed -->
+                <div id="emp1" class="player" style="float:left">
+                  <p>In order to see this content you need to have both <a href="http://www.bbc.co.uk/webwise/askbruce/articles/browse/java_1.shtml" title="BBC Webwise article about enabling javascript">Javascript</a> enabled and <a href="http://www.bbc.co.uk/webwise/askbruce/articles/download/howdoidownloadflashplayer_1.shtml" title="BBC Webwise article about downloading">Flash</a> installed. Visit <a href="http://www.bbc.co.uk/webwise/">BBC&nbsp;Webwise</a> for full instructions</p>
+                </div>
+            </article>
         </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -45,12 +38,64 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+        <!-- embed for BBC news -->
+        <script type="text/javascript" src="http://www.bbc.co.uk/emp/swfobject.js"></script>
+        <script type="text/javascript" src="http://www.bbc.co.uk/emp/embed.js"></script>
+        <script type="text/javascript" src="http://www.bbc.co.uk/cs/jst/mod/1/jst_core.v1.2.js"></script>
+        <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/shCore.js"></script>
+        <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/shBrushJScript.js"></script>
+        <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/prototype.js"></script>
+        <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/scriptaculous.js?load=effects"></script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        <script type="text/javascript">
+          dp.SyntaxHighlighter.HighlightAll('onceCode');
+          var width = 350;
+          var height = 200;   
+          var playlist;
+          var config;   
+          var revision; 
+
+        function reload(url) {
+          var emp = new embeddedMedia.Player();
+          emp.setWidth(width);
+          emp.setHeight(height);
+          emp.setDomId("emp1");
+          emp.set("config_settings_autoPlay","true");
+          playlist = "http://www.bbc.co.uk/emp/simulcast/"+url+".xml";
+          emp.setPlaylist(playlist);
+          config = "http://www.bbc.co.uk/emp/simulcast/config_"+url+".xml";
+          emp.setConfig(config);
+          emp.write(); 
+          updateEmbed();
+         }
+         
+         function updateEmbed() {
+          $('codeWrap').update('<pre name="code" class="js:nogutter" id="embedCode"></pre>');
+          $('embedCode').update("var emp = new embeddedMedia.Player();"+"\n"+
+                                "emp.setWidth('"+width+"');"+"\n"+
+                                "emp.setHeight('"+height+"');"+"\n"+
+                                "emp.setPlaylist('"+playlist+"');"+"\n"+
+                                "emp.setConfig('"+config+"');"+"\n"+
+                                "emp.write();");           
+          dp.SyntaxHighlighter.HighlightAll('code');
+         }
+
+         reload("bbc_news24");
+         /* bbc_two_england
+            bbc_three
+            bbc_four
+            cbbc
+            cbeebies
+            bbc_news24
+            bbc_parliament
+            bbc_alba */
         </script>
     </body>
 </html>

@@ -33,3 +33,6 @@ $config['num_posts'] = '5';
 */
 
 $config['feed_channel'] = 'bbc_news24';
+
+/* End of file settings.php */
+/* Location: ./application/config/settings.php */
