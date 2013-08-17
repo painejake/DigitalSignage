@@ -10,6 +10,8 @@
 
 		<p><textarea name="content" value="<?php echo set_value('content'); ?>" placeholder="News Content"></textarea></p>
 
+		<p><input type="input" name="author" value="<?php echo set_value('author'); ?>" placeholder="Post Author" /></p>
+
 		<input class="button" type="submit" name="submit" value="Create news entry" />
 	</form>
     <a href="logout">Logout</a>

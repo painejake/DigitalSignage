@@ -21,6 +21,7 @@ class News extends CI_Controller {
 
 		$this->form_validation->set_rules('title', 'title', 'required');
 		$this->form_validation->set_rules('content', 'content', 'required');
+		$this->form_validation->set_rules('author', 'author', 'required');
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/header');

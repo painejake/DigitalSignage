@@ -25,7 +25,7 @@ print_r($tweets); */
 	</div>
 
 	<footer>
-		<p>News posted: <?php echo date ("h:ia d/m/Y",strtotime($news_item['date'])); ?></p>
+		<p>Author: <?php echo $news_item['author'] ?></p>
 	</footer>
 </article>
 

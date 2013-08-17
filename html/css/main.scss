@@ -109,10 +109,13 @@ $fairfax-gray: #303030;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 html {
-     font-family: Tahoma, Geneva, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: $login-color;
 }
 
 hr {
@@ -120,8 +123,20 @@ hr {
     margin: auto;
 }
 
-.wrap {
+.fixed-header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #000; /* #4D351D */
+    font-size: 24px;
+    padding: 10px 15px 10px 15px;
 
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    opacity: 0.9;
 }
 
 .logo {
@@ -130,12 +145,19 @@ hr {
     max-width: 360px;
     height: 74px;
     margin: 20px auto 30px auto;
-
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.wrap {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: $login-color;
+    margin-top: 5em;
+}
+
+.span1 {
+    display: inline-block;
+}
 
 .login {
     max-width: 400px;
@@ -144,71 +166,89 @@ hr {
     background-color: $login-color;
     border-radius: 5px;
     padding: 5px;
-    margin-top: 3em;
-
-    h2 {
-        text-transform: uppercase;
-        font-family: 'Pathway Gothic One', sans-serif;
-        font-size: 28px;
-    }
+    margin-top: 5em;
 
     a {
         text-decoration: none;
         color: $fairfax-gray;
     }
+}
 
-    input {
-        height: 30px;
-        width: 250px;
-        border-radius: 5px;
-        border: 2px solid #c4c4c4;
-        padding: 4px 4px 4px 4px;
-        margin: 5px 0 5px 0;
-    }
+.left {
+    float: left;
+}
 
-    input:focus {
-        border: 2px solid $fairfax-yellow;
-        box-shadow: 0 0 2px $fairfax-yellow;
-    }
+.width {
+    width: 550px;
+}
 
-    .button, .button:visited {
-        text-align: center;
-        font-family: 'Pacifico', cursive;
-        text-transform: none;
-        font-size: 22px;
-        text-shadow: 0 1px 2px #000;
-        height: 46px;
-        display: inline-block;
-        padding: 0px 10px 6px;
-        border: 0;
-        color: #fff;
-        text-decoration: none;
-        text-shadow: 0 2px 5px rgba(0,0,0,0.25);
-        position: relative;
-        cursor: pointer;
-        background-color: $fairfax-gray;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        -webkit-transition: background-color 0.5s ease-in-out;
-        -moz-transition: background-color 0.5s ease-in-out;
-        -o-transition: background-color 0.5s ease-in-out;
-        transition: background-color 0.5s ease-in-out;
-        margin: 1em 0 1em 0;
+input {
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid #c4c4c4;
+    padding: 4px 4px 4px 4px;
+    margin: 5px 0 5px 0;
+}
 
-        box-shadow: 0 1px 1px #313131, 
-                    0 5px 1px #202425,
-                    inset 0 1px 0 #575757;
-    }
+input:focus {
+    border: 2px solid $fairfax-yellow;
+    box-shadow: 0 0 2px $fairfax-yellow;
+    outline: 0;
+}
 
-    .button:hover {
-        color: #fff;
-        background-color: #555555;
-        -webkit-transition: background-color 0.5s ease-in-out;
-        -moz-transition: background-color 0.5s ease-in-out;
-        -o-transition: background-color 0.5s ease-in-out;
-        transition: background-color 0.5s ease-in-out;
-    }
+textarea {
+    height: 200px;
+    width: 550px;
+    border-radius: 5px;
+    border: 2px solid #c4c4c4;
+    padding: 8px 8px 8px 8px;
+    margin: 5px 0 5px 0;
+}
+
+textarea:focus {
+    border: 2px solid $fairfax-yellow;
+    box-shadow: 0 0 2px $fairfax-yellow;
+    outline: 0;
+}
+
+.button, .button:visited {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    text-transform: none;
+    font-size: 22px;
+    text-shadow: 0 1px 2px #000;
+    height: 46px;
+    display: inline-block;
+    padding: 0px 10px 6px;
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    background-color: $fairfax-gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    margin: 1em 0 1em 0;
+
+    box-shadow: 0 1px 1px #313131, 
+                0 5px 1px #202425,
+                inset 0 1px 0 #575757;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #555555;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .bbcfeed {
