@@ -1,4 +1,10 @@
-/* main.scss */
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -86,179 +92,165 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+$fairfax-yellow: #fff200;
+$fairfax-dark-gray: #2b2b2b;
+$fairfax-light-gray: #5a5a5a;
+$text-color: #fff;
 
-$login-color: #e4e4e4;
-$blue-color: #50bfff;
-$fairfax-yellow: #ffed00;
-$fairfax-gray: #303030;
-
-::-webkit-input-placeholder {
-    font-style: italic;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   font-style: italic;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   font-style: italic;
-}
-
-:-ms-input-placeholder {  
-   font-style: italic;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     text-transform: uppercase;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: normal;
+    line-height: 0.1em;
 }
 
 html {
-    font-family: Tahoma, Geneva, sans-serif;
-    background-color: $login-color;
+    background-color: $fairfax-light-gray;
 }
 
-hr {
-    max-width: 85%;
-    margin: auto;
+body {
+    background-color: $fairfax-light-gray;
+    color: $text-color;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
-.fixed-header {
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    height: 30px;
+header {
+    background-color: $fairfax-yellow;
+    height: 40px;
     width: 100%;
-    background-color: #000; /* #4D351D */
-    font-size: 24px;
-    padding: 10px 15px 10px 15px;
-
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-    opacity: 0.9;
-}
-
-.logo {
-    background-image: url('../img/fairfaxlogo.png');
-    background-repeat: no-repeat;
-    max-width: 360px;
-    height: 74px;
-    margin: 20px auto 30px auto;
+    margin-bottom: -20px;
 }
 
 .wrap {
-    max-width: 90%;
-    margin: auto;
-    text-align: center;
-    background-color: $login-color;
-    margin-top: 5em;
+    box-shadow: 0px 0px 20px #000;
+    background-color: $fairfax-dark-gray;
+    padding: 10px;
+    height: 485px;
 }
 
-.span1 {
-    display: inline-block;
+.bottom-wrap {
+    background-color: $fairfax-yellow;
+    padding: 10px;
+    box-shadow: 0px 0px 20px #000;
 }
 
-.login {
-    max-width: 400px;
+.slideshow {
+    margin-top: -18px;
+    max-width: 995px;
     margin: auto;
-    text-align: center;
-    background-color: $login-color;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 5em;
 
-    a {
-        text-decoration: none;
-        color: $fairfax-gray;
+    img {
+        margin-top: -18px;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 20px #000;
     }
 }
 
-.left {
-    float: left;
+.dates {
+    width: 50%;
+    display: inline-block;
+    
+    li {
+        list-style: none;
+        margin-left: -40px;
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
 }
 
-.width {
-    width: 550px;
+.news-feed {
+    float: right;
+    width: 420px;
+    height: 238px;
+    display: inline-block;
+    border: solid 5px #fff;
+    box-shadow: 0px 0px 20px #000;
+    margin: 10px;
+    margin-top: 20px;
 }
 
-input {
-    height: 30px;
+.tweets {
+    width: 380px;
+    height: 165px;
+    display: inline-block;
+    color: #000;
+
+    p {
+        margin-top: -99px;
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
+}
+
+.news {
+    width: 600px;
+    height: 165px;
+    display: inline-block;
+    float: right;
+    color: #000;
+
+    ul {
+        margin-top: -99px;
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
+}
+
+.tweets-image {
+    background-image: url('../img/tweets.png');
+    background-repeat: no-repeat;
+    height: 201px;
     width: 250px;
-    border-radius: 5px;
-    border: 2px solid #c4c4c4;
-    padding: 4px 4px 4px 4px;
-    margin: 5px 0 5px 0;
+    margin-top: -69px;
 }
 
-input:focus {
-    border: 2px solid $fairfax-yellow;
-    box-shadow: 0 0 2px $fairfax-yellow;
-    outline: 0;
+.news-image {
+    background-image: url('../img/students.png');
+    background-repeat: no-repeat;
+    height: 201px;
+    width: 250px;
+    margin-top: -65px;
 }
 
-textarea {
-    height: 200px;
-    width: 550px;
-    border-radius: 5px;
-    border: 2px solid #c4c4c4;
-    padding: 8px 8px 8px 8px;
-    margin: 5px 0 5px 0;
+footer {
+    height: 50px;
+    width: 100%;
+
+    p {
+        margin-left: 35px;
+        margin-top: 5px;
+        color: $fairfax-dark-gray;
+    }
+
+    .twitter-logo {
+        background-image: url('../img/twitter-logo.png');
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    .facebook-logo {
+        background-image: url('../img/facebook-logo.png');
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        margin-left: 150px;
+        margin-top: 15px;
+    }
+
+    .date {
+        float: right;
+        margin-top: 15px;
+        margin-right: 10px;
+        line-height: 1.8em;
+    }
 }
 
-textarea:focus {
-    border: 2px solid $fairfax-yellow;
-    box-shadow: 0 0 2px $fairfax-yellow;
-    outline: 0;
-}
 
-.button, .button:visited {
-    text-align: center;
-    font-family: 'Pacifico', cursive;
-    text-transform: none;
-    font-size: 22px;
-    text-shadow: 0 1px 2px #000;
-    height: 46px;
-    display: inline-block;
-    padding: 0px 10px 6px;
-    border: 0;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    position: relative;
-    cursor: pointer;
-    background-color: $fairfax-gray;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -o-transition: background-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out;
-    margin: 1em 0 1em 0;
 
-    box-shadow: 0 1px 1px #313131, 
-                0 5px 1px #202425,
-                inset 0 1px 0 #575757;
-}
 
-.button:hover {
-    color: #fff;
-    background-color: #555555;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    -moz-transition: background-color 0.5s ease-in-out;
-    -o-transition: background-color 0.5s ease-in-out;
-    transition: background-color 0.5s ease-in-out;
-}
-
-.bbcfeed {
-    background-color: #000;
-    display: inline-block;
-    position: absolute;
-    left: 15px;
-    bottom: 25px;
-    box-shadow: 3px 5px 15px #000;
-}
 
 
 
