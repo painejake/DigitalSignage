@@ -5,8 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Digital Signage Dashboard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -16,6 +15,7 @@
 
         <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -31,39 +31,41 @@
             <a href="logout">Logout</a>
         </div>
 
-        <section>
-            <header>
-                <div class="logo"></div>
-            </header>
-            <hr>
+        <header>
+            <div class="logo"></div>
+        </header>
 
+        <section class="wrap">
+            <hr>
             <div class="span1">
                 <h1>Create a news post</h1>
-                <form action="http://localhost:8888/DigitalSignage/release/index.php/news/create" method="post" accept-charset="utf-8">
+                <form action="" method="post" accept-charset="utf-8">
                     <p><input class="width" type="input" name="title" value="" placeholder="News Title" /></p>
                     <p><input class="width" type="input" name="author" value="" placeholder="News Author" /></p>
                     <p><textarea name="content" value="" placeholder="News Content"></textarea></p>
-                    <p><input class="button" type="submit" name="submit" value="Create entry" /></p>
+                    <p><input class="button" type="submit" name="submit" value="Create News Post" /></p>
                 </form>
             </div>
 
+            <div class="span2">
+                <h1>Create a new event</h1>
+                <form action="" method="post" accept-charset="utf-8">
+                    <p><input class="width" type="input" name="title" value="" placeholder="Event Title" /></p>
+                    <p><input class="width" type="input" name="author" value="" placeholder="Event Date" /></p>
+                    <p><input class="width" type="input" name="author" value="" placeholder="Event Time (optional)" /></p>
+                    <p><input class="button" type="submit" name="submit" value="Create New Event" /></p>
+                </form>
+            </div>
             <hr>
-            <footer>
-                <p>Page rendered in 0.0263 seconds.</p>
-            </footer>
         </section>
+
+        <footer>
+            <p>Page rendered in 0.0263 seconds.</p>
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>

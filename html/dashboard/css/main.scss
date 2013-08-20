@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    font-family: 'Marcellus SC', serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1.1em;
 }
 
@@ -140,7 +140,16 @@ hr {
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-    opacity: 0.9;
+    opacity: 1;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Pathway Gothic One', sans-serif;
+        position: fixed;
+        top: 7px;
+    }
 }
 
 .logo {
@@ -148,11 +157,23 @@ hr {
     background-repeat: no-repeat;
     max-width: 360px;
     height: 74px;
-    margin: 20px auto 30px auto;
+    margin: 80px auto 30px auto;
+}
+
+.wrap {
+    max-width: 800px;
+    margin: auto;
 }
 
 .span1 {
     display: inline-block;
+    width: 360px;
+}
+
+.span2 {
+    display: inline-block;
+    width: 360px;
+    float: right;
 }
 
 .login {
@@ -162,11 +183,14 @@ hr {
     background-color: $login-color;
     border-radius: 5px;
     padding: 5px;
-    margin-top: 5em;
 
     a {
         text-decoration: none;
         color: $fairfax-gray;
+    }
+
+    input {
+        width: 500px;
     }
 }
 
@@ -178,13 +202,22 @@ hr {
     width: 550px;
 }
 
+footer {
+    p {
+        font-size: 0.9em;
+        opacity: 0.8;
+        text-align: center;
+    }
+}
+
 input {
     height: 30px;
-    width: 250px;
+    max-width: 350px;
     border-radius: 5px;
     border: 2px solid #c4c4c4;
     padding: 4px 4px 4px 4px;
     margin: 5px 0 5px 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 input:focus {
@@ -195,11 +228,12 @@ input:focus {
 
 textarea {
     height: 200px;
-    width: 550px;
+    width: 350px;
     border-radius: 5px;
     border: 2px solid #c4c4c4;
-    padding: 8px 8px 8px 8px;
+    padding: 8px 4px 8px 4px;
     margin: 5px 0 5px 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
 textarea:focus {
@@ -209,6 +243,7 @@ textarea:focus {
 }
 
 .button, .button:visited {
+    width: 350px;
     text-align: center;
     font-family: 'Pacifico', cursive;
     text-transform: none;
@@ -216,7 +251,7 @@ textarea:focus {
     text-shadow: 0 1px 2px #000;
     height: 46px;
     display: inline-block;
-    padding: 0px 10px 6px;
+    padding: 3px 10px 6px;
     border: 0;
     color: #fff;
     text-decoration: none;
@@ -246,19 +281,6 @@ textarea:focus {
     -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
 }
-
-.bbcfeed {
-    background-color: #000;
-    display: inline-block;
-    position: absolute;
-    left: 15px;
-    bottom: 25px;
-    box-shadow: 3px 5px 15px #000;
-}
-
-
-
-
 
 
 /* ==========================================================================

@@ -107,40 +107,40 @@
         <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/scriptaculous.js?load=effects"></script>
 
         <script type="text/javascript">
-          dp.SyntaxHighlighter.HighlightAll('onceCode');
-          var width = 420;
-          var height = 238;   
-          var playlist;
-          var config;   
-          var revision; 
+            dp.SyntaxHighlighter.HighlightAll('onceCode');
+            var width = 420;
+            var height = 238;   
+            var playlist;
+            var config;   
+            var revision; 
 
-        function reload(url) {
-          var emp = new embeddedMedia.Player();
-          emp.setWidth(width);
-          emp.setHeight(height);
-          emp.setDomId("emp1");
-          emp.set("config_settings_autoPlay","true");
-          playlist = "http://www.bbc.co.uk/emp/simulcast/"+url+".xml";
-          emp.setPlaylist(playlist);
-          config = "http://www.bbc.co.uk/emp/simulcast/config_"+url+".xml";
-          emp.setConfig(config);
-          emp.write(); 
-          updateEmbed();
-         }
-         
-         function updateEmbed() {
-          $('codeWrap').update('<pre name="code" class="js:nogutter" id="embedCode"></pre>');
-          $('embedCode').update("var emp = new embeddedMedia.Player();"+"\n"+
-                                "emp.setWidth('"+width+"');"+"\n"+
-                                "emp.setHeight('"+height+"');"+"\n"+
-                                "emp.setPlaylist('"+playlist+"');"+"\n"+
-                                "emp.setConfig('"+config+"');"+"\n"+
-                                "emp.write();");           
-          dp.SyntaxHighlighter.HighlightAll('code');
-         }
+            function reload(url) {
+                var emp = new embeddedMedia.Player();
+                emp.setWidth(width);
+                emp.setHeight(height);
+                emp.setDomId("emp1");
+                emp.set("config_settings_autoPlay","true");
+                playlist = "http://www.bbc.co.uk/emp/simulcast/"+url+".xml";
+                emp.setPlaylist(playlist);
+                config = "http://www.bbc.co.uk/emp/simulcast/config_"+url+".xml";
+                emp.setConfig(config);
+                emp.write(); 
+                updateEmbed();
+            }
 
-         reload("bbc_news24");
-         /* bbc_two_england
+            function updateEmbed() {
+            $('codeWrap').update('<pre name="code" class="js:nogutter" id="embedCode"></pre>');
+                $('embedCode').update("var emp = new embeddedMedia.Player();"+"\n"+
+                    "emp.setWidth('"+width+"');"+"\n"+
+                    "emp.setHeight('"+height+"');"+"\n"+
+                    "emp.setPlaylist('"+playlist+"');"+"\n"+
+                    "emp.setConfig('"+config+"');"+"\n"+
+                    "emp.write();");           
+                dp.SyntaxHighlighter.HighlightAll('code');
+            }
+
+            reload("bbc_news24");
+            /* bbc_two_england
             bbc_three
             bbc_four
             cbbc
