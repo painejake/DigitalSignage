@@ -120,6 +120,36 @@ header {
     margin-bottom: -20px;
 }
 
+.latest-event {
+    width: 500px;
+    height: auto;
+    display: block;
+    background-color: rgb(0,0,0);
+    z-index: 1000;
+    margin: auto;
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+
+    h4 {
+        color: $fairfax-yellow;
+        font-weight: bold;
+        font-weight: 0.3em;
+        margin-top: 10px;
+    }
+
+    p {
+        color: #fff;
+        margin: 0;
+        line-height: 0.2em;
+        padding-bottom: 15px;
+        font-size: 0.9em;
+    }
+}
+
 .wrap {
     box-shadow: 0px 0px 20px #000;
     background-color: $fairfax-dark-gray;
@@ -134,15 +164,19 @@ header {
 }
 
 .slideshow {
-    margin-top: -18px;
-    max-width: 995px;
+    max-width: 990px;
     margin: auto;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    height: 188px;
+    display: block;
+    background-color: $fairfax-dark-gray;
+    box-shadow: 0px 0px 10px #000;
 
     img {
-        margin-top: -18px;
         max-width: 100%;
         height: auto;
-        box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 10px #000;
     }
 }
 
@@ -161,12 +195,13 @@ header {
 .news-feed {
     float: right;
     width: 420px;
-    height: 238px;
+    height: 240px;
     display: inline-block;
     border: solid 5px #fff;
     box-shadow: 0px 0px 20px #000;
     margin: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .tweets {
@@ -193,6 +228,12 @@ header {
         margin-top: -99px;
         font-size: 0.8em;
         line-height: 1.8em;
+        list-style: none;
+        margin-left: -5px;
+    }
+
+    li:before {
+        content: "\25ba\00a0";
     }
 }
 
@@ -215,6 +256,7 @@ header {
 footer {
     height: 50px;
     width: 100%;
+    overflow: hidden;
 
     p {
         margin-left: 35px;

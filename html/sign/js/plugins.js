@@ -22,3 +22,6 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+ jQuery(document).ready(function() {
+           jQuery('.slideshow').cycle({ fx: 'fade' });
+ });

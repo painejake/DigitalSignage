@@ -94,6 +94,31 @@ header {
   width: 100%;
   margin-bottom: -20px; }
 
+.latest-event {
+  width: 500px;
+  height: auto;
+  display: block;
+  background-color: black;
+  z-index: 1000;
+  margin: auto;
+  position: relative;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  opacity: 0.8;
+  text-align: center;
+  padding: 5px; }
+  .latest-event h4 {
+    color: #fff200;
+    font-weight: bold;
+    font-weight: 0.3em;
+    margin-top: 10px; }
+  .latest-event p {
+    color: #fff;
+    margin: 0;
+    line-height: 0.2em;
+    padding-bottom: 15px;
+    font-size: 0.9em; }
+
 .wrap {
   box-shadow: 0px 0px 20px #000;
   background-color: #2b2b2b;
@@ -106,14 +131,18 @@ header {
   box-shadow: 0px 0px 20px #000; }
 
 .slideshow {
-  margin-top: -18px;
-  max-width: 995px;
-  margin: auto; }
+  max-width: 990px;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  height: 188px;
+  display: block;
+  background-color: #2b2b2b;
+  box-shadow: 0px 0px 10px #000; }
   .slideshow img {
-    margin-top: -18px;
     max-width: 100%;
     height: auto;
-    box-shadow: 0px 0px 20px #000; }
+    box-shadow: 0px 0px 10px #000; }
 
 .dates {
   width: 50%;
@@ -127,12 +156,13 @@ header {
 .news-feed {
   float: right;
   width: 420px;
-  height: 238px;
+  height: 240px;
   display: inline-block;
   border: solid 5px #fff;
   box-shadow: 0px 0px 20px #000;
   margin: 10px;
-  margin-top: 20px; }
+  margin-top: 5px;
+  margin-bottom: 15px; }
 
 .tweets {
   width: 380px;
@@ -153,7 +183,11 @@ header {
   .news ul {
     margin-top: -99px;
     font-size: 0.8em;
-    line-height: 1.8em; }
+    line-height: 1.8em;
+    list-style: none;
+    margin-left: -5px; }
+  .news li:before {
+    content: "\25ba\00a0"; }
 
 .tweets-image {
   background-image: url("../img/tweets.png");
@@ -171,7 +205,8 @@ header {
 
 footer {
   height: 50px;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   footer p {
     margin-left: 35px;
     margin-top: 5px;
