@@ -7,6 +7,6 @@ Class Logout extends CI_Controller {
 		$this->session->unset_userdata('username');
 		$this->session->sess_destroy();
 
-		redirect('news','refresh');
+		redirect('home','refresh');
 	}
 }

@@ -1,9 +1,23 @@
-<?php echo validation_errors(); ?>
 
-<?php echo form_open('verifylogin') ?>
-	<input type="input" id="username" name="username" placeholder="Username" /><br />
+        <section class="login">
+            <article>
+                <header>
+                    <hr>
+                    <h1>Digital signage dashboard</h1>
+                </header>
+                <?php echo validation_errors(); ?>
 
-    <input type="password" id="passowrd" name="password" placeholder="Password" /><br />
+				<?php echo form_open('verifylogin') ?>
+					<input type="input" id="username" name="username" placeholder="Username" /><br />
 
-	<input class="button" type="submit" name="submit" value="Login" />
-</form>
+				    <input type="password" id="passowrd" name="password" placeholder="Password" /><br />
+
+					<input class="button" type="submit" name="submit" value="Login" />
+				</form>
+
+                <hr>
+                <footer>
+                    <p><a href="#">Forgot your password?</a></p>
+                </footer>
+            </article>
+        </section>

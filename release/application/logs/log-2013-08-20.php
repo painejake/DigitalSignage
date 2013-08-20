@@ -237,3 +237,7 @@ ERROR - 2013-08-20 14:38:46 --> Query error: You have an error in your SQL synta
 ERROR - 2013-08-20 14:38:46 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Exceptions.php:185) /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Common.php 442
 ERROR - 2013-08-20 14:42:38 --> Severity: Notice  --> Undefined index: event /Applications/MAMP/htdocs/DigitalSignage/release/application/views/home_view.php 23
 ERROR - 2013-08-20 14:42:38 --> Severity: Notice  --> Undefined index: date /Applications/MAMP/htdocs/DigitalSignage/release/application/views/home_view.php 23
+ERROR - 2013-08-20 14:55:01 --> 404 Page Not Found --> apple-touch-favicon.png
+ERROR - 2013-08-20 15:00:47 --> 404 Page Not Found --> news
+ERROR - 2013-08-20 15:00:53 --> 404 Page Not Found --> news
+ERROR - 2013-08-20 15:27:29 --> 404 Page Not Found --> home/apple-touch-favicon.png

@@ -10,9 +10,9 @@ class Create extends CI_Controller {
     }
 
 	public function index() {		
-		$this->load->view('template/header');
+		$this->load->view('template/dashboard/header');
 		$this->load->view('create_view');
-		$this->load->view('template/footer');
+		$this->load->view('template/dashboard/footer');
 	}
 
     private function check_session(){
