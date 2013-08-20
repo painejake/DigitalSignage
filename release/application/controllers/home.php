@@ -1,17 +1,19 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class News extends CI_Controller {
+class Home extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		$this->load->model('news_model');
+		$this->load->model('home_model');
 	}
 
 	public function index() {
-		$data['news'] = $this->news_model->get_news();
+		$data = array();
+		$data['news'] = $this->home_model->get_news();
+		$data['events'] = $this->home_model->get_events();
 
 		$this->load->view('template/header');
-		$this->load->view('news_view', $data);
+		$this->load->view('home_view', $data);
 		$this->load->view('template/footer');
 	}
 

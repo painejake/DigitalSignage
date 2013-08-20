@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class News_model extends CI_Model {
+class Home_model extends CI_Model {
 
 	public function __construct() {
 		$this->load->database();
@@ -10,6 +10,11 @@ class News_model extends CI_Model {
 		$num_posts = $this->config->item('num_posts');
 
 		$q = $this->db->query("SELECT * FROM news ORDER BY id DESC LIMIT $num_posts");
+		return $q->result_array();
+	}
+
+	public function get_events() {
+		$q = $this->db->query("SELECT * FROM dates ORDER BY id DESC LIMIT 1");
 		return $q->result_array();
 	}
 

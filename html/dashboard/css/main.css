@@ -195,13 +195,13 @@ textarea:focus {
 .button, .button:visited {
   width: 350px;
   text-align: center;
-  font-family: 'Pacifico', cursive;
-  text-transform: none;
+  text-transform: uppercase;
+  font-family: 'Pathway Gothic One', sans-serif;
   font-size: 22px;
   text-shadow: 0 1px 2px #000;
   height: 46px;
   display: inline-block;
-  padding: 3px 10px 6px;
+  padding: 6px 10px 6px;
   border: 0;
   color: #fff;
   text-decoration: none;
