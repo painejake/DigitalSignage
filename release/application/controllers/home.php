@@ -17,7 +17,7 @@ class Home extends CI_Controller {
 		$this->load->view('template/footer');
 	}
 
-	public function create() {
+	public function create_news() {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 
@@ -30,7 +30,24 @@ class Home extends CI_Controller {
 			$this->load->view('create_view');
 			$this->load->view('template/footer');
 		} else {
-			$this->news_model->create_entry();
+			$this->home_model->create_news_entry();
+			$this->load->view('success');
+		}
+	}
+
+	public function create_events() {
+		$this->load->helper('form');
+		$this->load->library('form_validation');
+
+		$this->form_validation->set_rules('event', 'event', 'required');
+		$this->form_validation->set_rules('date', 'date', 'required');
+
+		if ($this->form_validation->run() === FALSE) {
+			$this->load->view('template/header');
+			$this->load->view('create_view');
+			$this->load->view('template/footer');
+		} else {
+			$this->home_model->create_events_entry();
 			$this->load->view('success');
 		}
 	}

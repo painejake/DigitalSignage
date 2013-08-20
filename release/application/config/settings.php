@@ -11,7 +11,20 @@
 |
 */
 
-$config['num_posts'] = '5';
+$config['num_news_posts'] = '5';
+
+/*
+|--------------------------------------------------------------------------
+| Number of events
+|--------------------------------------------------------------------------
+|
+| This is the maximum number of events to be displayed on the signage page.
+| 
+| To set this to unlimited (at your own risk) set to a high number.
+|
+*/
+
+$config['num_events_posts'] = '5';
 
 /*
 |--------------------------------------------------------------------------

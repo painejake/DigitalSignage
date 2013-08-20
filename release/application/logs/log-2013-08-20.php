@@ -219,3 +219,21 @@ ERROR - 2013-08-20 14:14:17 --> Severity: Warning  --> Invalid argument supplied
 ERROR - 2013-08-20 14:16:49 --> 404 Page Not Found --> news
 ERROR - 2013-08-20 14:16:50 --> 404 Page Not Found --> news
 ERROR - 2013-08-20 14:16:58 --> 404 Page Not Found --> news
+ERROR - 2013-08-20 14:31:00 --> 404 Page Not Found --> home/create
+ERROR - 2013-08-20 14:31:01 --> 404 Page Not Found --> home/create
+ERROR - 2013-08-20 14:33:05 --> Severity: Notice  --> Undefined property: Home::$news_model /Applications/MAMP/htdocs/DigitalSignage/release/application/controllers/home.php 33
+ERROR - 2013-08-20 14:34:36 --> 404 Page Not Found --> home/create
+ERROR - 2013-08-20 14:34:43 --> 404 Page Not Found --> home/create
+ERROR - 2013-08-20 14:35:12 --> 404 Page Not Found --> home/create
+ERROR - 2013-08-20 14:35:47 --> Severity: Notice  --> Undefined property: Home::$news_model /Applications/MAMP/htdocs/DigitalSignage/release/application/controllers/home.php 50
+ERROR - 2013-08-20 14:38:42 --> Severity: Notice  --> Undefined variable: num_events_posts /Applications/MAMP/htdocs/DigitalSignage/release/application/models/home_model.php 18
+ERROR - 2013-08-20 14:38:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ERROR - 2013-08-20 14:38:42 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Exceptions.php:185) /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Common.php 442
+ERROR - 2013-08-20 14:38:43 --> Severity: Notice  --> Undefined variable: num_events_posts /Applications/MAMP/htdocs/DigitalSignage/release/application/models/home_model.php 18
+ERROR - 2013-08-20 14:38:43 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ERROR - 2013-08-20 14:38:43 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Exceptions.php:185) /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Common.php 442
+ERROR - 2013-08-20 14:38:46 --> Severity: Notice  --> Undefined variable: num_events_posts /Applications/MAMP/htdocs/DigitalSignage/release/application/models/home_model.php 18
+ERROR - 2013-08-20 14:38:46 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ERROR - 2013-08-20 14:38:46 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Exceptions.php:185) /Applications/MAMP/htdocs/DigitalSignage/release/system/core/Common.php 442
+ERROR - 2013-08-20 14:42:38 --> Severity: Notice  --> Undefined index: event /Applications/MAMP/htdocs/DigitalSignage/release/application/views/home_view.php 23
+ERROR - 2013-08-20 14:42:38 --> Severity: Notice  --> Undefined index: date /Applications/MAMP/htdocs/DigitalSignage/release/application/views/home_view.php 23

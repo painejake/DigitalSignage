@@ -1,31 +1,17 @@
 
 <?php foreach ($news as $news_item): ?>
 
-<article>
-	<header>
-		<h3><?php echo $news_item['title'] ?></h3>
-	</header>
+<h3><?php echo $news_item['title'] ?></h3>
 
-	<div>
-		<?php $content = $this->typography->auto_typography($news_item['content']); ?>
-	    <?php echo $content ?>
-	</div>
+<?php $content = $this->typography->auto_typography($news_item['content']); ?>
+<?php echo $content ?>
 
-	<footer>
-		<p>Author: <?php echo $news_item['author'] ?></p>
-	</footer>
-</article>
+<p>Author: <?php echo $news_item['author'] ?></p>
 
 <?php endforeach ?>
 
-<hr>
+<?php foreach ($events as $events_item): ?>
 
-<article>
-  <div>
+<p><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?></p>
 
-	<?php foreach ($events as $events_item): ?>
-    <p><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?></p>
-    <?php endforeach ?>
-
-  </div>
-</article>
+<?php endforeach ?>
