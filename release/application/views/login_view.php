@@ -5,7 +5,9 @@
                     <hr>
                     <h1>Digital signage dashboard</h1>
                 </header>
-                <?php echo validation_errors(); ?>
+                <div class="error">
+                    <?php echo validation_errors(); ?>
+                </div>
 
 				<?php echo form_open('verifylogin') ?>
 					<input type="input" id="username" name="username" placeholder="Username" /><br />
