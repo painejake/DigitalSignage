@@ -1,5 +1,6 @@
-<?php echo validation_errors(); ?>
-
+<div class="post-error">
+    <?php echo validation_errors(); ?>
+</div>
         <section class="wrap">
             <hr>
             <div class="span1">

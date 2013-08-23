@@ -27,12 +27,12 @@ class Home extends CI_Controller {
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
+			$this->load->view('error_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_news_entry();
 			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
+			$this->load->view('success');
 			$this->load->view('template/dashboard/footer');
 		}
 	}
@@ -46,11 +46,11 @@ class Home extends CI_Controller {
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
+			$this->load->view('error_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
+			$this->load->view('success');
 			$this->load->view('template/dashboard/footer');
 		}
 	}

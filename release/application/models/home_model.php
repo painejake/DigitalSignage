@@ -29,20 +29,16 @@ class Home_model extends CI_Model {
 			);
 
 		return $this->db->insert('news', $data);
-
-		$this->db->cache_delete_all();
 	}
 
 	public function create_events_entry() {
 
-		$data = array(
+		$event_data = array(
 			'event'			=> $this->input->post('event'),
 			'date'			=> $this->input->post('date'),
 			'time'			=> $this->input->post('time')
 			);
 
-		return $this->db->insert('dates', $data);
-
-		$this->db->cache_delete_all();
+		return $this->db->insert('dates', $event_data);
 	}
 }
