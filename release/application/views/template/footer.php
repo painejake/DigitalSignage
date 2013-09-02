@@ -14,6 +14,8 @@
         <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/prototype.js"></script>
         <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/scriptaculous.js?load=effects"></script>
 
+        <?php $feed_channel = $this->config->item('feed_channel'); ?>
+
         <script type="text/javascript">
 
             dp.SyntaxHighlighter.HighlightAll('onceCode');
@@ -48,15 +50,7 @@
                 dp.SyntaxHighlighter.HighlightAll('code');
             }
 
-            reload("bbc_news24");
-            /* bbc_two_england
-            bbc_three
-            bbc_four
-            cbbc
-            cbeebies
-            bbc_news24
-            bbc_parliament
-            bbc_alba */
+            reload("<?php echo $feed_channel ?>");
         </script>
     </body>
 </html>
