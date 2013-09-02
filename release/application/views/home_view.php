@@ -1,17 +1,16 @@
+        <?php foreach ($events as $events_item): ?>
+        <?php $latest_date = date("l jS \of F Y", strtotime($events_item['date'])); ?>
 
         <header>
             <div class="latest-event">
                 <h4>Upcoming Event</h4>
-                <?php foreach ($events as $events_item): ?>
-
-                <?php $latest_date = date("l jS \of F Y", strtotime($events_item['date'])); ?>
                 <p><?php echo $events_item['event'] ?> - <?php echo $latest_date ?></p>
-
-                <?php break ?>
-                <?php endforeach ?>
             </div>
         </header>
-        
+
+        <?php break ?>
+        <?php endforeach ?>
+
         <section class="wrap">
             <div class="slideshow">
                 <img src="<?php echo base_url(); ?>img/slide1.jpg" width="995" height="210" alt="Slideshow" />
@@ -21,10 +20,10 @@
             <article class="dates">
                 <h3>Latest from the Student Bulletin...</h3>
                 <hr>
-                <ul id="webticker">
-                    <?php foreach ($news as $news_item): ?>
-                    <li><strong><?php echo $news_item['title'] ?></strong> - <?php echo $news_item['content'] ?></li>
+                <ul id="ticker01">
+                    <?php foreach ($news as $news_item): ?><li><strong><?php echo $news_item['title'] ?></strong> - <?php echo $news_item['content'] ?></li>
                     <?php endforeach ?>
+
                 </ul>
             </article>
 
@@ -49,9 +48,9 @@
                 <div class="news-image"></div>
                 <div class="news-items">
 	                <ul>
-                        <?php foreach ($events as $events_item): ?>
-                        <li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?></li>
+                        <?php foreach ($events as $events_item): ?><li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?></li>
                         <?php endforeach ?>
+
 	                </ul>
                 </div>
             </article>
