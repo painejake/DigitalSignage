@@ -1,2 +1,4 @@
 
 .DS_Store
+
+release/application/config/database.php

@@ -49,6 +49,7 @@ class Home extends CI_Controller {
 			$this->load->view('error_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
+			$this->home_model->create_events_entry();
 			$this->load->view('template/dashboard/header');
 			$this->load->view('success');
 			$this->load->view('template/dashboard/footer');

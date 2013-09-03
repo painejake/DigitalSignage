@@ -1,9 +1,8 @@
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="<?php echo base_url(); ?>js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script src="<?php echo base_url(); ?>js/plugins.js"></script>
         <script src="<?php echo base_url(); ?>js/main.js"></script>
         <script src="<?php echo base_url(); ?>js/vendor/jquery.cycle.all.js"></script>
-        <script src="https://raw.github.com/logicbox/jquery-simplyscroll/2.0.X/jquery.simplyscroll.min.js"></script>
 
         <!-- embed for BBC news -->
         <script type="text/javascript" src="http://www.bbc.co.uk/emp/swfobject.js"></script>

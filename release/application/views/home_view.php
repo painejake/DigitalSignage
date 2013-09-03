@@ -15,16 +15,20 @@
             <div class="slideshow">
                 <img src="<?php echo base_url(); ?>img/slide1.jpg" width="995" height="210" alt="Slideshow" />
                 <img src="<?php echo base_url(); ?>img/slide2.jpg" width="995" height="210" alt="Slideshow" />
+                <img src="<?php echo base_url(); ?>img/slide3.jpg" width="995" height="210" alt="Slideshow" />
             </div>
-
             <article class="dates">
                 <h3>Latest from the Student Bulletin...</h3>
                 <hr>
-                <ul id="ticker01">
-                    <?php foreach ($news as $news_item): ?><li><strong><?php echo $news_item['title'] ?></strong> - <?php echo $news_item['content'] ?></li>
-                    <?php endforeach ?>
+                <div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
+                    <div id="vmarquee" style="position: absolute; width: 98%;">
+                        <ul>
+                            <?php foreach ($news as $news_item): ?><li><strong><?php echo $news_item['title'] ?></strong> - <?php echo $news_item['content'] ?></li><br />
+                            <?php endforeach ?>
 
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </article>
 
             <article class="news-feed">
