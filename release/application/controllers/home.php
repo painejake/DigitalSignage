@@ -62,4 +62,11 @@ class Home extends CI_Controller {
 
   		redirect('/create/', 'refresh');
 	}
+
+	public function delete_dates($id) {
+		$this->load->database();
+  		$this->db->delete('dates', array('id' => $id));
+
+  		redirect('/create/', 'refresh');
+	}
 }
