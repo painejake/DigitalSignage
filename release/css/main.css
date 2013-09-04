@@ -211,8 +211,7 @@ footer {
   overflow: hidden; }
   footer p {
     margin-left: 35px;
-    margin-top: 5px;
-    color: #2b2b2b; }
+    margin-top: 5px; }
   footer .twitter-logo {
     background-image: url("../img/twitter-logo.png");
     height: 30px;

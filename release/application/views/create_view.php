@@ -23,4 +23,9 @@
 				</form>
             </div>
             <hr>
+                <h1>Delete a news post</h1>
+                <?php foreach ($news as $news_item): ?><li><?php echo $news_item['title'] ?> - <a href="home/delete/" onclick="return confirm('Are you sure you wish to delete this post?');">Delete</a></li><br />
+                <?php endforeach ?>
+
+            <hr>
         </section>

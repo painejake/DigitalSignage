@@ -1,4 +1,4 @@
-/* main.scss */
+/* dashboard.scss */
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -251,6 +251,16 @@ textarea:focus {
   -moz-transition: background-color 0.5s ease-in-out;
   -o-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out; }
+
+li {
+  margin-left: 15px;
+  line-height: 0.2em;
+
+  a {
+    color: red;
+    text-decoration: none;
+  }
+}
 
 /* ==========================================================================
    Helper classes

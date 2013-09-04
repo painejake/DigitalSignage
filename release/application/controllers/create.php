@@ -7,11 +7,16 @@ class Create extends CI_Controller {
 	function __construct(){
         parent::__construct();
         $this->check_session();
+        $this->load->model('home_model');
     }
 
-	public function index() {		
+	public function index() {
+		$data = array();
+		$data['news'] = $this->home_model->get_news();
+		$data['events'] = $this->home_model->get_events();
+
 		$this->load->view('template/dashboard/header');
-		$this->load->view('create_view');
+		$this->load->view('create_view', $data);
 		$this->load->view('template/dashboard/footer');
 	}
 

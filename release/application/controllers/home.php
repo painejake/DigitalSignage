@@ -55,4 +55,8 @@ class Home extends CI_Controller {
 			$this->load->view('template/dashboard/footer');
 		}
 	}
+
+	public function delete($id) {
+		echo 'delete function';
+	}
 }
