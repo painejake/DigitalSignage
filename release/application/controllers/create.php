@@ -7,6 +7,7 @@ class Create extends CI_Controller {
 	function __construct(){
         parent::__construct();
         $this->check_session();
+        
         $this->load->model('home_model');
     }
 

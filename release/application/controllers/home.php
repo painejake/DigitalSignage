@@ -4,7 +4,7 @@ class Home extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		$this->load->model('home_model');
+		$this->load->model('home_model'); 
 	}
 
 	public function index() {
@@ -56,7 +56,10 @@ class Home extends CI_Controller {
 		}
 	}
 
-	public function delete($id) {
-		echo 'delete function';
+	public function delete_news($id) {
+		$this->load->database();
+  		$this->db->delete('news', array('id' => $id));
+
+  		redirect('/create/', 'refresh');
 	}
 }
