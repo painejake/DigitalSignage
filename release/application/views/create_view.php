@@ -29,7 +29,7 @@
 
             <hr>
                 <h1>Delete an event entry</h1>
-                <?php foreach ($events as $events_item): ?><li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?> - <a href="home/delete_dates/<?php echo $news_item['id'] ?>" onclick="return confirm('Are you sure you wish to delete this post?');">Delete</a></li><br />
+                <?php foreach ($events as $events_item): ?><li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?> - <a href="home/delete_dates/<?php echo $events_item['id'] ?>" onclick="return confirm('Are you sure you wish to delete this post?');">Delete</a></li><br />
                 <?php endforeach ?>
 
             <hr>

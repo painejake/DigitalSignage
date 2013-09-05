@@ -61,3 +61,57 @@ ERROR - 2013-09-04 12:36:29 --> Severity: Notice  --> Undefined variable: news /
 ERROR - 2013-09-04 12:36:29 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
 ERROR - 2013-09-04 12:36:32 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
 ERROR - 2013-09-04 12:36:32 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:19:25 --> 404 Page Not Found --> home/apple-touch-favicon.png
+ERROR - 2013-09-04 14:20:17 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:20:17 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:20:17 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:20:17 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:20:24 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:20:24 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:20:24 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:20:24 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:23:18 --> Severity: Notice  --> Undefined variable: data /Applications/MAMP/htdocs/DigitalSignage/release/application/controllers/home.php 30
+ERROR - 2013-09-04 14:23:18 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:23:18 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:23:18 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:23:18 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:23:36 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:23:36 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:23:36 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:23:36 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:32 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:32 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:32 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:32 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:36 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:36 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:36 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:36 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:50 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:50 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:50 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:50 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:53 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:53 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:24:53 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:24:53 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:25:00 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:25:00 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:25:00 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:25:00 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:33 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:33 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:33 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:33 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:37 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:37 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:37 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:37 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:43 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:43 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:43 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:43 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:50 --> Severity: Notice  --> Undefined variable: news /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:50 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 27
+ERROR - 2013-09-04 14:26:50 --> Severity: Notice  --> Undefined variable: events /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32
+ERROR - 2013-09-04 14:26:50 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/DigitalSignage/release/application/views/create_view.php 32

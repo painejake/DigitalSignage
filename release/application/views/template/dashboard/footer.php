@@ -1,5 +1,6 @@
         <footer>
             <p>Page rendered in {elapsed_time} seconds.</p>
+            <p><small>DigitalSignage v0.2</small></p>
         </footer>
 
         <script>

@@ -20,6 +20,7 @@ class Home extends CI_Controller {
 	public function create_news() {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
+		$this->load->model('home_model'); 
 
 		$this->form_validation->set_rules('title', 'title', 'required');
 		$this->form_validation->set_rules('content', 'content', 'required');
@@ -27,12 +28,12 @@ class Home extends CI_Controller {
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
-			$this->load->view('error_view');
+			$this->load->view('create_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_news_entry();
 			$this->load->view('template/dashboard/header');
-			$this->load->view('success');
+			$this->load->view('create_view');
 			$this->load->view('template/dashboard/footer');
 		}
 	}
@@ -46,12 +47,12 @@ class Home extends CI_Controller {
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
-			$this->load->view('error_view');
+			$this->load->view('create_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_events_entry();
 			$this->load->view('template/dashboard/header');
-			$this->load->view('success');
+			$this->load->view('create_view');
 			$this->load->view('template/dashboard/footer');
 		}
 	}
