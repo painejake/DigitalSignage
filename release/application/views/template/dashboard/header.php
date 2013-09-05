@@ -33,7 +33,8 @@
 
         <!-- Add your site or application content here -->
         <div class="fixed-header">
-            <a href="logout">Logout</a>
+            <a class="logout" href="logout">Logout</a>
+            <a class="viewsite" href="<?php echo base_url(); ?>">View Sigange Page</a>
         </div>
 
         <header>
