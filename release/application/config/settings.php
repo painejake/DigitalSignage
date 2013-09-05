@@ -28,6 +28,21 @@ $config['num_events_posts'] = '5';
 
 /*
 |--------------------------------------------------------------------------
+| Refresh Time
+|--------------------------------------------------------------------------
+|
+| The time in seconds that we refresh the sigage page automatically.
+| 
+| Set this to a high number to disable. Please be aware if this is disabled
+| then the dynamic aspect of the page (tweets and new items displaying)
+| will not work!
+|
+*/
+
+$config['refresh_time'] = '900';
+
+/*
+|--------------------------------------------------------------------------
 | BBC Channel Feed
 |--------------------------------------------------------------------------
 |

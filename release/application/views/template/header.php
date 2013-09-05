@@ -4,11 +4,12 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+        <?php $refresh_time = $this->config->item('refresh_time'); ?>
         <meta charset="utf-8">
         <title>Digital Signage</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <meta http-equiv="refresh" content="3600">
+        <meta http-equiv="refresh" content="<?php echo $refresh_time ?>">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
