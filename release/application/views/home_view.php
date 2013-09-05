@@ -52,7 +52,7 @@
                 <div class="news-image"></div>
                 <div class="news-items">
 	                <ul>
-                        <?php foreach ($events as $events_item): ?><li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?></li>
+                        <?php foreach ($events as $events_item): ?><li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?> <?php if ($events_item['time'] == '') { } else { echo '/ '; echo $events_item['time']; } ?></li>
                         <?php endforeach ?>
 
 	                </ul>
