@@ -33,7 +33,7 @@
 
         <!-- Add your site or application content here -->
         <div class="fixed-header">
-            <a class="logout" href="logout">Logout</a>
+            <?php if(! $this->session->userdata('logged_in')){ } else { echo '<a class="logout" href="logout">Logout</a>'; } ?>
             <a class="viewsite" href="<?php echo base_url(); ?>">View Sigange Page</a>
         </div>
 
