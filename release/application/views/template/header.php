@@ -12,6 +12,8 @@
         <meta http-equiv="refresh" content="<?php echo $refresh_time ?>">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="<?php echo base_url(); ?>apple-touch-favicon.png">
+        <link rel="icon" type="image/png" href="<?php echo base_url(); ?>apple-touch-favicon.png">
 
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/normalize.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/main.css">

@@ -10,8 +10,8 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="apple-touch-icon" href="apple-touch-favicon.png">
-        <link rel="icon" type="image/png" href="apple-touch-favicon.png">
+        <link rel="apple-touch-icon" href="<?php echo base_url(); ?>apple-touch-favicon.png">
+        <link rel="icon" type="image/png" href="<?php echo base_url(); ?>apple-touch-favicon.png">
 
         <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
