@@ -1,5 +1,4 @@
         
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script src="<?php echo base_url(); ?>js/plugins.js"></script>
         <script src="<?php echo base_url(); ?>js/main.js"></script>
         <script src="<?php echo base_url(); ?>js/vendor/jquery.cycle.all.js"></script>
