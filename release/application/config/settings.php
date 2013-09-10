@@ -32,10 +32,15 @@ $config['num_events_posts'] = '5';
 |--------------------------------------------------------------------------
 |
 | The time in milliseconds that we refresh the sigage page automatically.
+|
+| 600000 	= 10 minutes
+| 900000 	= 15 minutes
+| 1800000	= 30 minutes
 | 
 | Set this to a high number to disable. Please be aware if this is disabled
 | then the dynamic aspect of the page (tweets and new items displaying)
-| will not work!
+| will not work! If the number is set too low buffer issues will occur with
+| the BBC news feed.
 |
 */
 

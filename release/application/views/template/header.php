@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <?php $refresh_time = $this->config->item('refresh_time'); ?>
+        
         <meta charset="utf-8">
         <title>Digital Signage</title>
         <meta name="description" content="">
