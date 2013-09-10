@@ -7,7 +7,8 @@
 |
 | This is the maximum number of posts to be displayed on the signage page.
 | 
-| To set this to unlimited (at your own risk) set to a high number.
+| To set this to unlimited (at your own risk) set to a high number however
+| this will break the default template.
 |
 */
 
@@ -20,7 +21,8 @@ $config['num_news_posts'] = '10';
 |
 | This is the maximum number of events to be displayed on the signage page.
 | 
-| To set this to unlimited (at your own risk) set to a high number.
+| To set this to unlimited (at your own risk) set to a high number however
+| this will break the default template.
 |
 */
 

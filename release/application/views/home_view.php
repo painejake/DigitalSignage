@@ -68,6 +68,6 @@
                 <p>facebook.com/FairfaxSchool</p>
             </div>
             <div class="date">
-                <p><?php echo date("l jS \of F Y"); /*?> / <?php echo date('g:i:s a'); */?></p>
+                <p><?php echo date("l jS \of F Y"); ?></p>
             </div>
         </footer>
