@@ -16,7 +16,9 @@ class Home_model extends CI_Model {
 	public function get_events() {
 		$num_events_posts = $this->config->item('num_events_posts');
 
-		$q = $this->db->query("SELECT * FROM dates ORDER BY id ASC LIMIT $num_events_posts");
+		$curr_date = date("Y-m-d");
+
+		$q = $this->db->query("SELECT * FROM dates WHERE `date` >= '$curr_date' ORDER BY id ASC LIMIT $num_events_posts");
 		return $q->result_array();
 	}
 
