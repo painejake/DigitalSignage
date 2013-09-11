@@ -18,10 +18,11 @@ Class User_model extends CI_Model {
 		}
 	}
 
-	public function reset($username, $security) {
-		$this->db->select('id', 'username', 'security');
+	public function reset($username, $security, $email) {
+		$this->db->select('id', 'username', 'security', 'email');
 		$this->db->from('users');
 		$this->db->where('username', $username);
+		$this->db->where('email', $email);
 		$this->db->where('security', $security);
 		$this->db->limit(1);
 

@@ -12,6 +12,7 @@ Class ForgotPassword extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
 		$this->form_validation->set_rules('security', 'Security', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|xss_clean');
 		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|min_length[6]');
 		$this->form_validation->set_rules('confirmpassword', 'Confirm Password', 'trim|xss_clean|min_length[6]|callback_check_database');
 
@@ -27,19 +28,27 @@ Class ForgotPassword extends CI_Controller {
 
 	public function check_database() {
 		// validate against db
-		$username = $this->input->post('username');
-		$security = $this->input->post('security');
-		$password = $this->input->post('password');
+		$username 	= $this->input->post('username');
+		$security 	= $this->input->post('security');
+		$email 		= $this->input->post('email');
+		$password 	= $this->input->post('password');
 
-		$result = $this->user_model->reset($username, $security);
+		$result = $this->user_model->reset($username, $security, $email);
 
 		if($result) {
 			$this->db->query("UPDATE `users` SET `password` = SHA1( '$password' ) WHERE `username` = '$username';");
 
+			// send email to notify user of password change
+			$this->email->from('donotreply@fairfax.bham.sch.uk', 'Digital Signage');
+			$this->email->to($email);
+
+			$this->email->subject('Password Reset');
+			$this->email->message('Your password has been reset using the reset form.');
+
+			$this->email->send();
+
 			// password change complete redirect to login
-			$this->load->view('template/dashboard/header');
-			$this->load->view('login_view');
-			$this->load->view('template/dashboard/footer');
+			redirect('login','refresh');
 
 		} else {
 			$this->form_validation->set_message('check_database', 'Cannot validate username and security key combination');

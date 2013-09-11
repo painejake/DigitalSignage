@@ -14,6 +14,8 @@
 
                     <input type="input" id="security" name="security" value="<?php echo set_value('security'); ?>" placeholder="Security Code" /><br />
 
+                    <input type="input" id="email" name="email" value="<?php echo set_value('email'); ?>" placeholder="Email Address" /><br />
+
                     <input type="password" autocomplete="off" id="passowrd" name="password" placeholder="New Password" /><br />
 
                     <input type="password" autocomplete="off" id="confirmpassowrd" name="confirmpassowrd" placeholder="Confirm New Password" /><br />
