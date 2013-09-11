@@ -19,7 +19,7 @@
 
                 <hr>
                 <footer>
-                    <p><a href="#">Forgot your password?</a></p>
+                    <p><a href="<?php echo base_url(); ?>index.php/forgot">Forgot your password?</a></p>
                 </footer>
             </article>
         </section>
