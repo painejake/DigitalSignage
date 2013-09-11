@@ -9,16 +9,16 @@
                     <?php echo validation_errors(); ?>
                 </div>
 
-				<?php echo form_open('verifylogin') ?>
+				<?php echo form_open('forgotpassword') ?>
                     <input type="input" id="username" name="username" placeholder="Username" /><br />
 
-					<input type="input" id="email" name="email" placeholder="Email" /><br />
+                    <input type="input" id="security" name="security" placeholder="Security Code" /><br />
 
                     <input type="password" id="passowrd" name="password" placeholder="New Password" /><br />
 
-                    <input type="password" id="passowrd" name="password" placeholder="Confirm New Password" /><br />
+                    <input type="password" id="confirmpassowrd" name="confirmpassowrd" placeholder="Confirm New Password" /><br />
 
-					<input class="button" type="submit" name="submit" value="Login" />
+					<input class="button" type="submit" name="submit" value="Reset Password" />
 				</form>
 
                 <hr>
