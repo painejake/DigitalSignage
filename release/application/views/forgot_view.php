@@ -10,13 +10,13 @@
                 </div>
 
 				<?php echo form_open('forgotpassword') ?>
-                    <input type="input" id="username" name="username" placeholder="Username" /><br />
+                    <input type="input" id="username" name="username" value="<?php echo set_value('username'); ?>" placeholder="Username" /><br />
 
-                    <input type="input" id="security" name="security" placeholder="Security Code" /><br />
+                    <input type="input" id="security" name="security" value="<?php echo set_value('security'); ?>" placeholder="Security Code" /><br />
 
-                    <input type="password" id="passowrd" name="password" placeholder="New Password" /><br />
+                    <input type="password" autocomplete="off" id="passowrd" name="password" placeholder="New Password" /><br />
 
-                    <input type="password" id="confirmpassowrd" name="confirmpassowrd" placeholder="Confirm New Password" /><br />
+                    <input type="password" autocomplete="off" id="confirmpassowrd" name="confirmpassowrd" placeholder="Confirm New Password" /><br />
 
 					<input class="button" type="submit" name="submit" value="Reset Password" />
 				</form>
