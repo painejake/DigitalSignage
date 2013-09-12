@@ -32,9 +32,9 @@ class Home extends CI_Controller {
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_news_entry();
-			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
-			$this->load->view('template/dashboard/footer');
+			
+			//go private area
+			redirect('create', 'refresh');
 		}
 	}
 
@@ -51,9 +51,9 @@ class Home extends CI_Controller {
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_events_entry();
-			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
-			$this->load->view('template/dashboard/footer');
+
+			//go private area
+			redirect('create', 'refresh');
 		}
 	}
 
