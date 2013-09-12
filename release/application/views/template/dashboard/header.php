@@ -18,6 +18,8 @@
 
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/normalize.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/dashboard.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>css/jquery.dropdown.css">
+
         <script src="<?php echo base_url(); ?>js/vendor/modernizr-2.6.2.min.js"></script>
         
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
@@ -32,10 +34,17 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="fixed-header">
+
+        <header>
+            <nav class="fixed-header">
+                <a href="#" class="menu" data-dropdown="#dropdown-1">&#9776;</a>
+            </nav>
+        </header>
+        
+        <!--<div class="fixed-header">
             <?php if(! $this->session->userdata('logged_in')){ } else { echo '<a class="logout" href="logout">Logout</a>'; } ?>
-            <a class="viewsite" href="<?php echo base_url(); ?>">View Sigange Page</a>
-        </div>
+            <a href="#" class="menu" data-dropdown="#dropdown-1">&#9776;</a>
+        </div>-->
 
         <header>
             <div class="logo"></div>

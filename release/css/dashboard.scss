@@ -112,21 +112,14 @@ hr {
   -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
   opacity: 1; }
-  .logout {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Pathway Gothic One', sans-serif;
-    position: fixed;
-    top: 7px;}
-  .viewsite {
+  .menu {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Pathway Gothic One', sans-serif;
     position: fixed;
     top: 7px;
-    right: 15px;}
+    left: 15px;}
 
 .logo {
   background-image: url("../img/fairfaxlogo.png");
