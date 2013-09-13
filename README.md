@@ -1,4 +1,4 @@
-# [DigitalSignage]
+# DigitalSignage
 
 DigitalSignage is a website designed to display dynamic content accross TV screens shown within a business or school.
 ## Features
@@ -8,3 +8,5 @@ DigitalSignage is a website designed to display dynamic content accross TV scree
 * Features custom configuration
 * Posting of events and dates
 * BBC feeds pulled from iPlayer
+* User managment
+* Easily themed with custom layouts
