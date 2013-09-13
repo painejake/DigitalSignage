@@ -34,4 +34,20 @@ Class User_model extends CI_Model {
 			return FALSE;
 		}
 	}
+
+	public function check_exist($username, $email) {
+		$this->db->select('id', 'username', 'email');
+		$this->db->from('users');
+		$this->db->where('username', $username);
+		$this->db->where('email', $email);
+		$this->db->limit(1);
+
+		$q = $this->db->get();
+
+		if ($q->num_rows() == 1) {
+			return $q->result();
+		} else {
+			return $q->result();
+		}
+	}
 }
