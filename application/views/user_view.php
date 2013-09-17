@@ -1,3 +1,6 @@
+<div class="post-error">
+    <?php echo validation_errors(); ?>
+</div>
 
         <section class="login">
             <article>
@@ -5,7 +8,7 @@
                     <hr>
                     <h1>Create an Account</h1>
                 </header>
-                <?php echo form_open('createuser') ?>
+                <?php echo form_open('createuser'); ?>
                     <input type="input" autocomplete="off" id="username" name="username" placeholder="Username" /><br />
 
                     <input type="password" autocomplete="off" id="passowrd" name="password" placeholder="Password" /><br />

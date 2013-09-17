@@ -4,19 +4,16 @@ Class CreateUser extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-		
-		$this->load->model('user_model');
+		$this->load->model('user_model', '', TRUE);
 	}
 
 	public function index() {
 		// this method has the credentials validation
-		$this->load->helper('form');
 		$this->load->library('form_validation');
-
-		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
-		$this->form_validation->set_rules('security', 'Security', 'trim|required|xss_clean');
-		$this->form_validation->set_rules('email', 'Email', 'trim|required|xss_clean');
-		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|min_length[6]');
+		$this->form_validation->set_rules('username', 'Username', 'required', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('security', 'Security', 'required', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('email', 'Email', 'required', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('password', 'Password', 'required', 'trim|required|xss_clean|min_length[6]');
 		$this->form_validation->set_rules('confirmpassword', 'Confirm Password', 'trim|xss_clean|min_length[6]|callback_check_database');
 
 		if($this->form_validation->run() == FALSE) {
@@ -26,7 +23,7 @@ Class CreateUser extends CI_Controller {
 			$this->load->view('template/dashboard/footer');
 		} else {
 			// continue
-			$this->user_model->check_exist();
+
 		}
 	}
 
@@ -40,23 +37,22 @@ Class CreateUser extends CI_Controller {
 		$result = $this->user_model->check_exist($username, $email);
 
 		if($result) {
-			$this->form_validation->set_message('check_database', 'Account already exists');
-			return FALSE;
+			$this->form_validation->set_message('check_database', 'User account already exists');
 
+			return FALSE;
 		} else {
-			$this->db->query("INSERT INTO `users` (`id` , `username` , `password` , `email` , `security`) 
-				VALUES (NULL , '$username', SHA1( '$password') , '$email', '$security');");
+			$this->db->query("INSERT INTO `users` (`id` , `username` , `password` , `email` , `security`) VALUES (NULL , '$username', SHA1( '$password') , '$email', '$security');");
 
 			// send email to notify user of password change
 			$this->email->from('donotreply@fairfax.bham.sch.uk', 'Digital Signage');
 			$this->email->to($email);
 
-			$this->email->subject('User Account Created');
-			$this->email->message('Your account has been created for the Digital Sigange system. \n You can login here: link');
+			$this->email->subject('Account Creation');
+			$this->email->message('Your user account has been created.');
 
 			$this->email->send();
 
-			// password change complete redirect to login
+			// account creation complete redirect to home
 			redirect('create','refresh');
 		}
 	}
