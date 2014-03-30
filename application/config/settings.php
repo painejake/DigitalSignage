@@ -50,6 +50,27 @@ $config['refresh_time'] = '90000';
 
 /*
 |--------------------------------------------------------------------------
+| Twitter Widget	
+|--------------------------------------------------------------------------
+| 
+| This is to customize the twitter widget for your needs. You will need to
+| create a widget here first:
+|
+| https://twitter.com/settings/widgets
+|
+| Generate any widget and copy the twitter url link and the data-widget-id
+| 
+| URL: http://twitter.com/painejake
+| Data: 450375692270571520
+|
+*/
+
+$config['twitter_url'] = 'http://twitter.com/painejake';
+$config['twitter_data_id'] = '450375692270571520';
+
+
+/*
+|--------------------------------------------------------------------------
 | BBC Channel Feed
 |--------------------------------------------------------------------------
 |
