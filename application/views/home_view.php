@@ -43,7 +43,9 @@
             <article class="tweets">
                 <div class="tweets-image"></div>
                 <p>
-                    <a class="twitter-timeline" data-dnt="true" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1" href="https://twitter.com/FairfaxSchool" data-widget-id="367929468054040577"></a>
+                    <?php $twitter_url = $this->config->item('twitter_url'); ?>
+                    <?php $twitter_data_id = $this->config->item('twitter_data_id'); ?>
+                    <a class="twitter-timeline" data-dnt="true" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1" href="<?php echo $twitter_url; ?>" data-widget-id="<?php echo $twitter_data_id; ?>"></a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </p>
             </article>

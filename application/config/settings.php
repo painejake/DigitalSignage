@@ -68,7 +68,6 @@ $config['refresh_time'] = '90000';
 $config['twitter_url'] = 'http://twitter.com/painejake';
 $config['twitter_data_id'] = '450375692270571520';
 
-
 /*
 |--------------------------------------------------------------------------
 | BBC Channel Feed
