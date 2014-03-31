@@ -12,7 +12,11 @@
         <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/prototype.js"></script>
         <script type="text/javascript" src="http://www.bbc.co.uk/emp/simulcast/scriptaculous.js?load=effects"></script>
 
-        <?php $feed_channel = $this->config->item('feed_channel'); ?>
+        <?php $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'feed_channel' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $feed_channel = $row->value;
+        } ?>
 
         <script type="text/javascript">
 

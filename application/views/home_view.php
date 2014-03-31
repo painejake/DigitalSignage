@@ -1,6 +1,26 @@
         <?php foreach ($events as $events_item): ?>
         <?php $latest_date = date("l jS \of F Y", strtotime($events_item['date'])); ?>
 
+        <?php
+        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'facebook_pagename' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $facebook_pagename = $row->value;
+        }
+
+        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_username' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $twitter_username = $row->value;
+        }
+
+        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_data_id' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $twitter_data_id = $row->value;
+        }
+        ?>
+
         <header>
             <div class="latest-event">
                 <h4>Upcoming Event</h4>
@@ -43,8 +63,6 @@
             <article class="tweets">
                 <div class="tweets-image"></div>
                 <p>
-                    <?php $twitter_username = $this->config->item('twitter_username'); ?>
-                    <?php $twitter_data_id = $this->config->item('twitter_data_id'); ?>
                     <a class="twitter-timeline" data-dnt="true" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1" href="http://twitter.com/<?php echo $twitter_username; ?>" data-widget-id="<?php echo $twitter_data_id; ?>"></a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </p>
@@ -67,7 +85,6 @@
                 <p>@FairfaxSchool</p>
             </div>
             <div class="facebook-logo">
-                <?php $facebook_pagename = $this->config->item('facebook_pagename'); ?>
                 <p>facebook.com/<?php echo $facebook_pagename ?></p>
             </div>
             <div class="date">

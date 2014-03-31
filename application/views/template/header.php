@@ -4,7 +4,11 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <?php $refresh_time = $this->config->item('refresh_time'); ?>
+        <?php $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'refresh_time' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $refresh_time = $row->value;
+        } ?>
         
         <meta charset="utf-8">
         <title>Digital Signage</title>

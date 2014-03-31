@@ -5,7 +5,12 @@ class Home_model extends CI_Model {
 	public function __construct() {
 		$this->load->database();
 
-		$time_zone = $this->config->item('time_zone');
+		$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'time_zone' LIMIT 1");
+
+		foreach ($s_q->result() as $row) {
+			$time_zone = $row->value;
+		}
+
 		date_default_timezone_set($time_zone);
 	}
 
