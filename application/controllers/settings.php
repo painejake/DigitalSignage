@@ -22,4 +22,25 @@ class Settings extends CI_Controller {
 			redirect('login');
 		}
 	}
+
+	public function update_settings() {
+		$this->load->helper('form');
+		$this->load->library('form_validation');
+		$this->load->model('home_model'); 
+
+		$this->form_validation->set_rules('title', 'title', 'required');
+		$this->form_validation->set_rules('content', 'content', 'required');
+		$this->form_validation->set_rules('author', 'author', 'required');
+
+		if ($this->form_validation->run() === FALSE) {
+			$this->load->view('template/dashboard/header');
+			$this->load->view('settings_view');
+			$this->load->view('template/dashboard/footer');
+		} else {
+			$this->home_model->update_settings();
+			
+			//go private area
+			redirect('settings', 'refresh');
+		}
+	}
 }
