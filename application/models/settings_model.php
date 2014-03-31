@@ -2,7 +2,7 @@
 
 Class Settings_model extends CI_Model {
 
-	public function update_settings_db() {
+	public function update_settings() {
 
 		$data = array(
 			'num_news_posts'		=> $this->input->post('num_news_posts'),

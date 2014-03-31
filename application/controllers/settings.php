@@ -23,7 +23,7 @@ class Settings extends CI_Controller {
 		}
 	}
 
-	public function update_settings() {
+	public function update() {
 		$this->load->model('settings_model'); 
 
 		$this->form_validation->set_rules('num_news_posts', 'num_news_posts', 'required');
@@ -40,7 +40,7 @@ class Settings extends CI_Controller {
 			$this->load->view('settings_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
-			$this->home_model->update_settings_db();
+			$this->home_model->update_settings();
 			
 			//go private area
 			redirect('settings', 'refresh');
