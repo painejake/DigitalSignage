@@ -50,7 +50,20 @@ $config['refresh_time'] = '90000';
 
 /*
 |--------------------------------------------------------------------------
-| Twitter Widget	
+| Timezone
+|--------------------------------------------------------------------------
+|
+| This will set the timezone for displaying the date correctly. This is
+| useful if you're hosting from a shared package where the PHP timezone
+| setting will be different to your location
+|
+*/
+
+$config['time_zone'] = 'Europe/London';
+
+/*
+|--------------------------------------------------------------------------
+| Twitter Widget & Social Links	
 |--------------------------------------------------------------------------
 | 
 | This is to customize the twitter widget for your needs. You will need to
@@ -60,13 +73,20 @@ $config['refresh_time'] = '90000';
 |
 | Generate any widget and copy the twitter url link and the data-widget-id
 | 
-| URL: http://twitter.com/painejake
+| Username: painejake
 | Data: 450375692270571520
+|
+| The facebook pagename is the end url string of your facebook page after
+| the facebook url.
+|
+| http://facebook.com/mypage - where mypage is the page name.
 |
 */
 
-$config['twitter_url'] = 'http://twitter.com/painejake';
-$config['twitter_data_id'] = '450375692270571520';
+$config['twitter_username'] = 'fairfaxschool';
+$config['twitter_data_id'] = '367929468054040577';
+
+$config['facebook_pagename'] = 'fairfaxschool';
 
 /*
 |--------------------------------------------------------------------------

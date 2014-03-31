@@ -5,7 +5,8 @@ class Home_model extends CI_Model {
 	public function __construct() {
 		$this->load->database();
 
-		date_default_timezone_set('Europe/London');
+		$time_zone = $this->config->item('time_zone');
+		date_default_timezone_set($time_zone);
 	}
 
 	public function get_news() {
