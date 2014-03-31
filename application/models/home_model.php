@@ -10,14 +10,22 @@ class Home_model extends CI_Model {
 	}
 
 	public function get_news() {
-		$num_news_posts = $this->config->item('num_news_posts');
+		$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_news_posts' LIMIT 1");
+
+		foreach ($s_q->result() as $row) {
+		   $num_news_posts = $row->value;
+		}
 
 		$q = $this->db->query("SELECT * FROM news ORDER BY id DESC LIMIT $num_news_posts");
 		return $q->result_array();
 	}
 
 	public function get_events() {
-		$num_events_posts = $this->config->item('num_events_posts');
+		$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_events_posts' LIMIT 1");
+
+		foreach ($s_q->result() as $row) {
+		   $num_events_posts = $row->value;
+		}
 
 		$curr_date = date("Y-m-d");
 
