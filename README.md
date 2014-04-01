@@ -12,10 +12,9 @@ DigitalSignage is a cloud application designed to display dynamic content accros
 * Easily themed with custom layouts
 
 ## Installation
-Upload all the files to your webroot.
-Execute the SQL file under install\database.sql to create the base tables. The default username is admin and password is password. Once logged in the information can be changed under the Manage Account section.
-You will need to update your MySQL settings in the file located: install/database.php and move the file to application/config/database.php
+
+[Installation](https://github.com/painejake/DigitalSignage/wiki/Installation)
+
+[Settings & Configuration](https://github.com/painejake/DigitalSignage/wiki/Settings-and-Configuration)
 
 Recommended: Delete the install folder.
-
-All the DigitalSignage application settings can be found in the configuration file: application/config/settings.php.
