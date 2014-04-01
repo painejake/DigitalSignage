@@ -60,7 +60,7 @@
         ?>
 
                 <h2 class="sub-header">General Settings</h2>
-                <div class="table-responsive">
+                <div>
 
                 <?php echo form_open('settings/update') ?>
 
