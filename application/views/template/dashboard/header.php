@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="<?php echo base_url(); ?>apple-touch-favicon.png">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>DigitalSignage - Dashboard</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">

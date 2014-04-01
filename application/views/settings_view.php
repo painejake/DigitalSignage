@@ -1,65 +1,67 @@
-        <?php
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_news_posts' LIMIT 1");
+<?php
 
-        foreach ($s_q->result() as $row) {
-           $num_news_posts = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_news_posts' LIMIT 1");
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_events_posts' LIMIT 1");
+foreach ($s_q->result() as $row) {
+   $num_news_posts = $row->value;
+}
 
-        foreach ($s_q->result() as $row) {
-           $num_events_posts = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_events_posts' LIMIT 1");
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'time_zone' LIMIT 1");
+foreach ($s_q->result() as $row) {
+   $num_events_posts = $row->value;
+}
 
-        foreach ($s_q->result() as $row) {
-            $time_zone = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'time_zone' LIMIT 1");
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'refresh_time' LIMIT 1");
+foreach ($s_q->result() as $row) {
+    $time_zone = $row->value;
+}
 
-        foreach ($s_q->result() as $row) {
-           $refresh_time = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'refresh_time' LIMIT 1");
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'facebook_pagename' LIMIT 1");
+foreach ($s_q->result() as $row) {
+   $refresh_time = $row->value;
+}
 
-        foreach ($s_q->result() as $row) {
-           $facebook_pagename = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'facebook_pagename' LIMIT 1");
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_username' LIMIT 1");
+foreach ($s_q->result() as $row) {
+   $facebook_pagename = $row->value;
+}
 
-        foreach ($s_q->result() as $row) {
-           $twitter_username = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_username' LIMIT 1");
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_data_id' LIMIT 1");
+foreach ($s_q->result() as $row) {
+   $twitter_username = $row->value;
+}
 
-        foreach ($s_q->result() as $row) {
-           $twitter_data_id = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_data_id' LIMIT 1");
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'feed_channel' LIMIT 1");
+foreach ($s_q->result() as $row) {
+   $twitter_data_id = $row->value;
+}
 
-        foreach ($s_q->result() as $row) {
-           $feed_channel = $row->value;
-        }
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'feed_channel' LIMIT 1");
 
-        function timezone_list() {
-            $zones_array = array();
+foreach ($s_q->result() as $row) {
+   $feed_channel = $row->value;
+}
 
-            foreach(timezone_identifiers_list() as $key => $zone) {
-                date_default_timezone_set($zone);
-                $zones_array[$key]['zone'] = $zone;
-            }
-            return $zones_array;
-        }
+function timezone_list() {
+    $zones_array = array();
 
-        ?>
+    foreach(timezone_identifiers_list() as $key => $zone) {
+        date_default_timezone_set($zone);
+        $zones_array[$key]['zone'] = $zone;
+    }
+    return $zones_array;
+}
+
+?>
 
                 <h2 class="sub-header">General Settings</h2>
+                
                 <div>
 
                 <?php echo form_open('settings/update') ?>

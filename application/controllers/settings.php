@@ -40,7 +40,7 @@ class Settings extends CI_Controller {
 			$this->load->view('settings_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
-			
+
 			$this->settings_model->update_settings();
 
 			//go private area
