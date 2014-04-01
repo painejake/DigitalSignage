@@ -1,6 +1,3 @@
-        <?php foreach ($events as $events_item): ?>
-        <?php $latest_date = date("l jS \of F Y", strtotime($events_item['date'])); ?>
-
         <?php
         $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'facebook_pagename' LIMIT 1");
 
@@ -32,6 +29,9 @@
            $num_events_posts = $row->value;
         }
         ?>
+
+        <?php foreach ($events as $events_item): ?>
+        <?php $latest_date = date("l jS \of F Y", strtotime($events_item['date'])); ?>
 
         <header>
             <div class="latest-event">

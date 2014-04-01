@@ -61,13 +61,28 @@ class Home extends CI_Controller {
 		$this->load->database();
   		$this->db->delete('news', array('id' => $id));
 
-  		redirect('/create/', 'refresh');
+  		redirect('dash', 'refresh');
 	}
 
 	public function delete_dates($id) {
 		$this->load->database();
   		$this->db->delete('dates', array('id' => $id));
 
-  		redirect('/create/', 'refresh');
+  		redirect('dash', 'refresh');
+	}
+
+	public function edit_news($id) {
+
+		$q = $this->db->query("SELECT * FROM `news` WHERE `id` = $id");
+		
+		foreach ($q->result_array() as $row) {
+			$data['title'] = $row['title'];
+			$data['content'] = $row['content'];
+			$data['author'] = $row['author'];
+		}
+
+		$this->load->view('template/dashboard/header');
+		$this->load->view('edit_news_view', $data);
+		$this->load->view('template/dashboard/footer');
 	}
 }

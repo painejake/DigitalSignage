@@ -22,7 +22,7 @@
                                 <td><?php echo $news_item['date'] ?></td>
                                 <td><?php echo $news_item['author'] ?></td>
                                 <td>
-                                    <a href="#">
+                                    <a href="home/edit_news/<?php echo $news_item['id'] ?>">
                                         <button type="button" class="btn btn-primary btn-sm">Edit</button>
                                     </a>
                                 </td>
