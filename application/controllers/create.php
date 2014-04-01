@@ -14,20 +14,18 @@ class Create extends CI_Controller {
 	public function news() {
 		$data = array();
 		$data['news'] = $this->home_model->get_news();
-		$data['events'] = $this->home_model->get_events();
 
 		$this->load->view('template/dashboard/header');
-		$this->load->view('create_view', $data);
+		$this->load->view('create_news_view', $data);
 		$this->load->view('template/dashboard/footer');
 	}
 
-	public function event() {
+	public function events() {
 		$data = array();
-		$data['news'] = $this->home_model->get_news();
 		$data['events'] = $this->home_model->get_events();
 
 		$this->load->view('template/dashboard/header');
-		$this->load->view('create_view', $data);
+		$this->load->view('create_events_view', $data);
 		$this->load->view('template/dashboard/footer');
 	}
 

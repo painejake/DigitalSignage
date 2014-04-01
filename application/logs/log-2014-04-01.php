@@ -216,3 +216,135 @@ ERROR - 2014-04-01 11:01:41 --> Severity: 8192  --> mysql_pconnect(): The mysql 
 ERROR - 2014-04-01 11:01:41 --> 404 Page Not Found --> js
 ERROR - 2014-04-01 11:01:41 --> 404 Page Not Found --> js
 ERROR - 2014-04-01 11:02:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:05:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:05:22 --> Severity: Notice  --> Undefined variable: num_news_posts C:\xampp\htdocs\DigitalSignage\application\views\create_news_view.php 7
+ERROR - 2014-04-01 11:05:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:05:22 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:05:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:05:22 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:06:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:06:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:06:54 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:06:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:06:54 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:06:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:06:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:06:54 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:06:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:06:55 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:07:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:07:12 --> 404 Page Not Found --> create/dash
+ERROR - 2014-04-01 11:07:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:07:15 --> 404 Page Not Found --> js
+ERROR - 2014-04-01 11:07:15 --> 404 Page Not Found --> js
+ERROR - 2014-04-01 11:07:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:07:17 --> 404 Page Not Found --> create/dash
+ERROR - 2014-04-01 11:07:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:07:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:07:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:07:28 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:07:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:07:28 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:07:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:07:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:07:41 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:07:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:07:41 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:08:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:08:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:08:22 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:08:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:08:22 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:08:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:08:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:08:23 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:08:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:08:23 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:08:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:08:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:08:23 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:08:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:08:23 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:09:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:09:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:09:57 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:09:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:09:57 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:10:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:10:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:10:15 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:10:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:10:15 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:12:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:12:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:12:14 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:12:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:12:14 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:12:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:12:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:12:15 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:12:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:12:15 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:12:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:12:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:12:56 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:12:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:12:56 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:13:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:27 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:27 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:13:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:41 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:41 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:13:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:42 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:42 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:13:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:50 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:50 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:13:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:51 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:13:51 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:13:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:14:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:14:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:14:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:14:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:14:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:14:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:14:28 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:14:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 10:14:28 --> 404 Page Not Found --> create/js
+ERROR - 2014-04-01 11:15:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:15:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:15:36 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:15:44 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:15:47 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:15:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:16:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:16:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:16:33 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:16:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:17:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:17:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:17:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:17:46 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:17:46 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:17:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:18:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:18:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:18:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:18:45 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:18:46 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:18:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-04-01 11:20:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\DigitalSignage\system\database\drivers\mysql\mysql_driver.php 91
