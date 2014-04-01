@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>/ico/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>apple-touch-favicon.png">
 
     <title>Dashboard Template for Bootstrap</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap-theme.min.css">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/dashboard.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/dashboard.css">
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 
