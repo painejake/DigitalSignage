@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 01, 2014 at 01:35 PM
+-- Generation Time: Apr 01, 2014 at 05:19 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `news` (
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `author` varchar(40) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
 
 --
 -- Dumping data for table `news`
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
   `setting` text COLLATE utf8_bin NOT NULL,
   `value` text COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `settings`
@@ -95,12 +95,13 @@ CREATE TABLE IF NOT EXISTS `settings` (
 INSERT INTO `settings` (`id`, `setting`, `value`) VALUES
 (1, 'num_news_posts', '10'),
 (2, 'num_events_posts', '5'),
-(3, 'refresh_time', '300000'),
-(4, 'time_zone', 'Europe/London'),
+(3, 'refresh_time', '90000'),
+(4, 'time_zone', ''),
 (5, 'twitter_username', 'fairfaxschool'),
 (6, 'twitter_data_id', '367929468054040577'),
 (7, 'facebook_pagename', 'fairfaxschool'),
-(8, 'feed_channel', 'bbc_news24');
+(8, 'feed_channel', ''),
+(9, 'show_help_link', '');
 
 -- --------------------------------------------------------
 

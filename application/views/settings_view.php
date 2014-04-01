@@ -48,6 +48,12 @@ foreach ($s_q->result() as $row) {
    $feed_channel = $row->value;
 }
 
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'show_help_link' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $show_help_link = $row->value;
+}
+
 function timezone_list() {
     $zones_array = array();
 
@@ -92,6 +98,12 @@ function timezone_list() {
                     <option value="cbeebies" <?php if ($feed_channel == 'cbeebies') : echo "selected"; endif; ?>>CBeebies</option>
                     <option value="bbc_parliament" <?php if ($feed_channel == 'bbc_parliament') : echo "selected"; endif; ?>>BBC Parliment</option>
                     <option value="bbc_alb" <?php if ($feed_channel == 'bbc_alb') : echo "selected"; endif; ?>>BBC Alba</option>
+                </select></p>
+
+                <p>Show the help link:<br />
+                <select class="form-control limit-width" name="show_help_link">
+                    <option value="0" <?php if ($show_help_link == '0') : echo "selected"; endif; ?>>Don't Show</option>
+                    <option value="1" <?php if ($show_help_link == '1') : echo "selected"; endif; ?>>Show</option>
                 </select></p>
 
                 <hr>

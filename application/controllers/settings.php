@@ -34,6 +34,7 @@ class Settings extends CI_Controller {
 		$this->form_validation->set_rules('facebook_pagename', 'facebook_pagename', 'required');
 		$this->form_validation->set_rules('twitter_username', 'twitter_username', 'required');
 		$this->form_validation->set_rules('twitter_data_id', 'twitter_data_id', 'required');
+		$this->form_validation->set_rules('show_help_link', 'show_help_link');
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
