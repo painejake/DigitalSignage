@@ -56,6 +56,7 @@
             }
             return $zones_array;
         }
+
         ?>
 
         <section class="wrap">
