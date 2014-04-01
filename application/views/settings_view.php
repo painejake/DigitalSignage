@@ -65,27 +65,27 @@
                 <?php echo form_open('settings/update') ?>
 
                 <p>Total posts to display:<br />
-                <input type="input" name="num_news_posts" value="<?php echo $num_news_posts ?>" /></p>
+                <input class="form-control limit-width" type="input" name="num_news_posts" value="<?php echo $num_news_posts ?>" /></p>
 
                 <p>Total events to display:<br />
-                <input type="input" name="num_events_posts" value="<?php echo $num_events_posts; ?>" /></p>
+                <input class="form-control limit-width" type="input" name="num_events_posts" value="<?php echo $num_events_posts; ?>" /></p>
 
                 <p>Refresh time:<br />
-                <input type="input" name="refresh_time" value="<?php echo $refresh_time; ?>" /></p>
+                <input class="form-control limit-width" type="input" name="refresh_time" value="<?php echo $refresh_time; ?>" /></p>
 
                 <p>Time zone:<br />
-                <select name="time_zone">
+                <select class="form-control limit-width" name="time_zone">
                     <?php foreach(timezone_list() as $t) { ?>
                     <option value="<?php print $t['zone'] ?>" <?php if ($time_zone == $t['zone']) : echo "selected"; endif; ?>><?php print $t['zone'] ?></option>
                     <?php } ?>
                 </select></p>
 
                 <p>BBC News Feed:<br />
-                <select name="feed_channel">
-                    <option value="bbc_news24" <?php if ($feed_channel == 'bbc_news24') : echo "selected"; endif; ?>>BBC News 24</option>
+                <select class="form-control limit-width" name="feed_channel">
                     <option value="bbc_two_england" <?php if ($feed_channel == 'bbc_two_england') : echo "selected"; endif; ?>>BBC 2</option>
                     <option value="bbc_three" <?php if ($feed_channel == 'bbc_three') : echo "selected"; endif; ?>>BBC 3</option>
                     <option value="bbc_four" <?php if ($feed_channel == 'bbc_four') : echo "selected"; endif; ?>>BBC 4</option>
+                    <option value="bbc_news24" <?php if ($feed_channel == 'bbc_news24') : echo "selected"; endif; ?>>BBC News 24</option>
                     <option value="cbbc" <?php if ($feed_channel == 'cbbc') : echo "selected"; endif; ?>>CBBC</option>
                     <option value="cbeebies" <?php if ($feed_channel == 'cbeebies') : echo "selected"; endif; ?>>CBeebies</option>
                     <option value="bbc_parliament" <?php if ($feed_channel == 'bbc_parliament') : echo "selected"; endif; ?>>BBC Parliment</option>
@@ -97,13 +97,17 @@
                 <h2>Social Network Settings</h2>
 
                 <p>Facebook pagename:<br />
-                <input type="input" name="facebook_pagename" value="<?php echo $facebook_pagename ?>" /></p>
+                <input class="form-control limit-width" type="input" name="facebook_pagename" value="<?php echo $facebook_pagename ?>" /></p>
 
                 <p>Twitter username:<br />
-                <input type="input" name="twitter_username" value="<?php echo $twitter_username ?>" /></p>
+                <input class="form-control limit-width" type="input" name="twitter_username" value="<?php echo $twitter_username ?>" /></p>
 
                 <p>Twitter widget data id:<br />
-                <input type="input" name="twitter_data_id" value="<?php echo $twitter_data_id ?>" /></p>
+                <input class="form-control limit-width" type="input" name="twitter_data_id" value="<?php echo $twitter_data_id ?>" /></p>
+
+                <hr>
+
+                <p><input class="button" type="submit" name="submit" value="Save Settings" /></p>
 
                 <hr>
 
