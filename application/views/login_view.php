@@ -1,25 +1,23 @@
 
-        <section class="login">
-            <article>
-                <header>
-                    <hr>
-                    <h1>Digital signage dashboard</h1>
-                </header>
-                <div class="error">
-                    <?php echo validation_errors(); ?>
-                </div>
+                <h2 class="sub-header">Login</h2>
+                <div class="table-responsive">
 
-				<?php echo form_open('verifylogin') ?>
-					<input type="input" id="username" name="username" placeholder="Username" /><br />
+                <div class="text-danger"><?php echo validation_errors(); ?></div>
 
-				    <input type="password" autocomplete="off" id="passowrd" name="password" placeholder="Password" /><br />
+                <?php echo form_open('verifylogin') ?>
+                    <input class="form-control limit-width" type="input" id="username" name="username" placeholder="Username" /><br />
 
-					<input class="button" type="submit" name="submit" value="Login" />
-				</form>
+                    <input class="form-control limit-width" type="password" autocomplete="off" id="passowrd" name="password" placeholder="Password" /><br />
+
+                    <input class="button" type="submit" name="submit" value="Login" />
+                </form>
 
                 <hr>
+
                 <footer>
                     <p><a href="<?php echo base_url(); ?>index.php/forgot">Forgot your password?</a></p>
                 </footer>
-            </article>
-        </section>
+
+                <hr>
+
+        </div>

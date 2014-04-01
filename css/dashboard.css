@@ -114,3 +114,7 @@ body {
 /*
  * Input styles
  */
+
+.limit-width {
+  width: 300px !important;
+}

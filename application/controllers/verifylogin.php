@@ -20,7 +20,7 @@ Class VerifyLogin extends CI_Controller {
 			$this->load->view('template/dashboard/footer');
 		} else {
 			//go private area
-			redirect('create', 'refresh');
+			redirect('dash', 'refresh');
 		}
 	}
 
