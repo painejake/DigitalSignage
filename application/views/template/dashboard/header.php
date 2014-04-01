@@ -48,7 +48,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<?php echo site_url("dash"); ?>">Dashboard</a></li>
                     <li><a href="<?php echo site_url("settings"); ?>">Settings</a></li>
-                    <li><a href="<?php echo site_url("profile"); ?>">Profile</a></li>
+                    <!-- <li><a href="<?php echo site_url("profile"); ?>">Profile</a></li> -->
                     <li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>
                     <li><a href="<?php echo site_url("logout"); ?>">Logout</a></li>
                 </ul>
@@ -68,7 +68,7 @@
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li <?php if (current_url() == site_url("settings"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("settings"); ?>">Settings</a></li>
-                    <li <?php if (current_url() == site_url("profile"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("profile"); ?>">Profile</a></li>
+                    <!-- <li <?php if (current_url() == site_url("profile"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("profile"); ?>">Profile</a></li> -->
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>
