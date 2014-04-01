@@ -2,7 +2,7 @@
 
 session_start();
 
-class Create extends CI_Controller {
+class Dash extends CI_Controller {
 
 	function __construct(){
         parent::__construct();
@@ -11,23 +11,13 @@ class Create extends CI_Controller {
         $this->load->model('home_model');
     }
 
-	public function news() {
+	public function index() {
 		$data = array();
 		$data['news'] = $this->home_model->get_news();
 		$data['events'] = $this->home_model->get_events();
 
 		$this->load->view('template/dashboard/header');
-		$this->load->view('create_view', $data);
-		$this->load->view('template/dashboard/footer');
-	}
-
-	public function event() {
-		$data = array();
-		$data['news'] = $this->home_model->get_news();
-		$data['events'] = $this->home_model->get_events();
-
-		$this->load->view('template/dashboard/header');
-		$this->load->view('create_view', $data);
+		$this->load->view('dash_view', $data);
 		$this->load->view('template/dashboard/footer');
 	}
 

@@ -1,27 +1,22 @@
         
-        <footer>
-            <p>Page rendered in {elapsed_time} seconds</p>
-            <p><small>Script memory usage {memory_usage}</small></p>
-            <?php $version = $this->config->item('version'); ?>
-            <p><small><?php echo $version; ?></small></p>
-        </footer>
+            <footer>
+                <p>Page rendered in {elapsed_time} seconds</p>
+                <p><small>Script memory usage {memory_usage}</small></p>
+                <?php $version = $this->config->item('version'); ?>
+                <p><small><?php echo $version; ?></small></p>
+            </footer>
 
-        <script>
-		$( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
-		</script>
-
-        <div id="dropdown-1" class="dropdown dropdown-tip">
-            <ul class="dropdown-menu">
-                <li><a href="<?php echo base_url(); ?>index.php/create">Dashboard</a></li>
-                <li><a href="<?php echo base_url(); ?>index.php/user">Create a User</a></li>
-                <li><a href="<?php echo base_url(); ?>index.php/account">Manage Account</a></li>
-                <li class="dropdown-divider"></li>
-                <li><a href="<?php echo base_url(); ?>index.php/logout">Log Out</a></li>
-            </ul>
+            </div>
         </div>
+    </div>
 
-        <script src="<?php echo base_url(); ?>js/plugins.js"></script>
-        <script src="<?php echo base_url(); ?>js/main.js"></script>
-        <script src="<?php echo base_url(); ?>js/jquery.dropdown.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    
     </body>
 </html>

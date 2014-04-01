@@ -1,52 +1,76 @@
-<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Digital Signage Dashboard</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>/ico/favicon.ico">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="apple-touch-icon" href="<?php echo base_url(); ?>apple-touch-favicon.png">
-        <link rel="icon" type="image/png" href="<?php echo base_url(); ?>apple-touch-favicon.png">
+    <title>Dashboard Template for Bootstrap</title>
 
-        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="<?php echo base_url(); ?>css/normalize.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>css/dashboard.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>css/jquery.dropdown.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap-theme.min.css">
 
-        <script src="<?php echo base_url(); ?>js/vendor/modernizr-2.6.2.min.js"></script>
-        
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/dashboard.css">
 
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="<?php echo base_url(); ?>/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     </head>
+
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
-
-        <header>
-            <nav class="fixed-header">
-                <a href="#" class="menu" data-dropdown="#dropdown-1">&#9776;</a>
-            </nav>
-        </header>
-        
-        <!--<div class="fixed-header">
-            <?php if(! $this->session->userdata('logged_in')){ } else { echo '<a class="logout" href="logout">Logout</a>'; } ?>
-            <a href="#" class="menu" data-dropdown="#dropdown-1">&#9776;</a>
-        </div>-->
-
-        <header>
-            <div class="logo"></div>
-        </header>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">DigitalSignage</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">Dashboard</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Create a news post</a></li>
+                    <li><a href="">Create an event</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header">Dashboard</h1>
