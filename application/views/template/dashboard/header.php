@@ -44,11 +44,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url(); ?>/index.php/dash">Dashboard</a></li>
-                    <li><a href="<?php echo base_url(); ?>/index.php/settings">Settings</a></li>
-                    <li><a href="<?php echo base_url(); ?>/index.php/profile">Profile</a></li>
+                    <li><a href="<?php echo site_url("dash"); ?>">Dashboard</a></li>
+                    <li><a href="<?php echo site_url("settings"); ?>">Settings</a></li>
+                    <li><a href="<?php echo site_url("profile"); ?>">Profile</a></li>
                     <li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>
-                    <li><a href="<?php echo base_url(); ?>/index.php/logout">Logout</a></li>
+                    <li><a href="<?php echo site_url("logout"); ?>">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -58,15 +58,15 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li class="active"><a href="<?php echo base_url(); ?>/index.php/dash">Dashboard</a></li>
+                    <li <?php if (current_url() == site_url("dash"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("dash"); ?>">Dashboard</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="<?php echo base_url(); ?>/index.php/create/news">Create a news post</a></li>
-                    <li><a href="<?php echo base_url(); ?>/index.php/create/events">Create an event</a></li>
+                    <li <?php if (current_url() == site_url("create/news"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("create/news"); ?>">Create a news post</a></li>
+                    <li <?php if (current_url() == site_url("create/events"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("create/events"); ?>">Create an event</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="<?php echo base_url(); ?>/index.php/settings">Settings</a></li>
-                    <li><a href="<?php echo base_url(); ?>/index.php/profile">Profile</a></li>
+                    <li <?php if (current_url() == site_url("settings"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("settings"); ?>">Settings</a></li>
+                    <li <?php if (current_url() == site_url("profile"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("profile"); ?>">Profile</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
                     <li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>
