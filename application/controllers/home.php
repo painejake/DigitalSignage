@@ -34,7 +34,7 @@ class Home extends CI_Controller {
 			$this->home_model->create_news_entry();
 			
 			//go private area
-			redirect('create', 'refresh');
+			redirect('create/news', 'refresh');
 		}
 	}
 
@@ -53,7 +53,7 @@ class Home extends CI_Controller {
 			$this->home_model->create_events_entry();
 
 			//go private area
-			redirect('create', 'refresh');
+			redirect('create/events', 'refresh');
 		}
 	}
 

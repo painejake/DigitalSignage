@@ -19,6 +19,18 @@
         foreach ($s_q->result() as $row) {
            $twitter_data_id = $row->value;
         }
+
+        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_news_posts' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $num_news_posts = $row->value;
+        }
+
+        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_events_posts' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $num_events_posts = $row->value;
+        }
         ?>
 
         <header>
@@ -43,7 +55,11 @@
                 <div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
                     <div id="vmarquee" style="position: absolute; width: 98%;">
                         <ul>
-                            <?php foreach ($news as $news_item): ?><li><strong><?php echo $news_item['title'] ?></strong> - <?php echo $news_item['content'] ?></li><br />
+                            <?php foreach ($news as $news_item): ?>
+                            <?php $i = 0; ?>
+                                <li><strong><?php echo $news_item['title'] ?></strong> - <?php echo $news_item['content'] ?></li><br />
+                            <?php $i++; ?>
+                            <?php if ($i == $num_news_posts) break; ?>
                             <?php endforeach ?>
 
                         </ul>
@@ -72,7 +88,11 @@
                 <div class="news-image"></div>
                 <div class="news-items">
 	                <ul>
-                        <?php foreach ($events as $events_item): ?><li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?> <?php if ($events_item['time'] == '') { } else { echo '/ '; echo $events_item['time']; } ?></li>
+                        <?php foreach ($events as $events_item): ?>
+                        <?php $i = 0; ?>
+                            <li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?> <?php if ($events_item['time'] = '') { } else { echo '/ '; echo $events_item['time']; } ?></li>
+                        <?php $i++; ?>
+                        <?php if ($i == $num_events_posts) break; ?>
                         <?php endforeach ?>
 
 	                </ul>

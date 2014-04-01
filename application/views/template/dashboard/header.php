@@ -19,6 +19,8 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/css/dashboard.css">
 
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="<?php echo base_url(); ?>/js/ie8-responsive-file-warning.js"></script><![endif]-->
 

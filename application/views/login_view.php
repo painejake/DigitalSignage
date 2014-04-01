@@ -1,6 +1,6 @@
 
                 <h2 class="sub-header">Login</h2>
-                <div class="table-responsive">
+                <div>
 
                 <div class="text-danger"><?php echo validation_errors(); ?></div>
 
