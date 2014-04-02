@@ -1,4 +1,10 @@
-<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
+<?php header('X-UA-Compatible: IE=edge,chrome=1');
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'show_help_link' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $show_help_link = $row->value;
+} ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -49,7 +55,7 @@
                     <li><a href="<?php echo site_url("dash"); ?>">Dashboard</a></li>
                     <li><a href="<?php echo site_url("settings"); ?>">Settings</a></li>
                     <!-- <li><a href="<?php echo site_url("profile"); ?>">Profile</a></li> -->
-                    <li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>
+                    <?php if ($show_help_link == 1)  : echo '<li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>'; endif; ?>
                     <li><a href="<?php echo site_url("logout"); ?>">Logout</a></li>
                 </ul>
             </div>
@@ -71,7 +77,7 @@
                     <!-- <li <?php if (current_url() == site_url("profile"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("profile"); ?>">Profile</a></li> -->
                 </ul>
                 <ul class="nav nav-sidebar">
-                    <li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>
+                    <?php if ($show_help_link == 1)  : echo '<li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>'; endif; ?>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

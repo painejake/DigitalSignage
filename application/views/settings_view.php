@@ -54,6 +54,18 @@ foreach ($s_q->result() as $row) {
    $show_help_link = $row->value;
 }
 
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'latest_news_title' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $latest_news_title = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'latest_events_title' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $latest_events_title = $row->value;
+}
+
 function timezone_list() {
     $zones_array = array();
 
@@ -105,6 +117,16 @@ function timezone_list() {
                     <option value="0" <?php if ($show_help_link == '0') : echo "selected"; endif; ?>>Don't Show</option>
                     <option value="1" <?php if ($show_help_link == '1') : echo "selected"; endif; ?>>Show</option>
                 </select></p>
+
+                <hr>
+
+                <h2>Interface Settings</h2>
+
+                <p>Latest News Title<br />
+                <input class="form-control limit-width" type="text" name="latest_news_title" value="<?php echo $latest_news_title; ?>" /></p>
+
+                <p>Latest Events Title<br />
+                <input class="form-control limit-width" type="text" name="latest_events_title" value="<?php echo $latest_events_title; ?>" /></p>
 
                 <hr>
 

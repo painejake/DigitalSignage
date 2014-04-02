@@ -13,6 +13,8 @@ Class Settings_model extends CI_Model {
 		$show_help_link			= $this->input->post('show_help_link');
 		$feed_channel			= $this->input->post('feed_channel');
 		$time_zone				= $this->input->post('time_zone');
+		$latest_news_title		= $this->input->post('latest_news_title');
+		$latest_events_title	= $this->input->post('latest_events_title');
 
 		$this->db->query("UPDATE `settings` SET `value` = '$num_news_posts' WHERE `setting` = 'num_news_posts';");
 		$this->db->query("UPDATE `settings` SET `value` = '$num_events_posts' WHERE `setting` = 'num_events_posts';");
@@ -23,5 +25,7 @@ Class Settings_model extends CI_Model {
 		$this->db->query("UPDATE `settings` SET `value` = '$show_help_link' WHERE `setting` = 'show_help_link';");
 		$this->db->query("UPDATE `settings` SET `value` = '$feed_channel' WHERE `setting` = 'feed_channel';");
 		$this->db->query("UPDATE `settings` SET `value` = '$time_zone' WHERE `setting` = 'time_zone';");
+		$this->db->query("UPDATE `settings` SET `value` = '$latest_news_title' WHERE `setting` = 'latest_news_title';");
+		$this->db->query("UPDATE `settings` SET `value` = '$latest_events_title' WHERE `setting` = 'latest_events_title';");
 	}
 }
