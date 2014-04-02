@@ -31,4 +31,39 @@ class Dash extends CI_Controller {
 		$this->session->sess_destroy();
         redirect('login');
 	}
+
+	public function create_news() {
+
+		$this->form_validation->set_rules('title', 'title', 'required');
+		$this->form_validation->set_rules('content', 'content', 'required');
+		$this->form_validation->set_rules('author', 'author', 'required');
+
+		if ($this->form_validation->run() === FALSE) {
+			$this->load->view('template/dashboard/header');
+			$this->load->view('create_news_view');
+			$this->load->view('template/dashboard/footer');
+		} else {
+			$this->home_model->create_news_entry();
+			
+			//go private area
+			redirect('dash/success', 'refresh');
+		}
+	}
+
+	public function create_events() {
+
+		$this->form_validation->set_rules('event', 'event', 'required');
+		$this->form_validation->set_rules('date', 'date', 'required');
+
+		if ($this->form_validation->run() === FALSE) {
+			$this->load->view('template/dashboard/header');
+			$this->load->view('create_events_view');
+			$this->load->view('template/dashboard/footer');
+		} else {
+			$this->home_model->create_events_entry();
+
+			//go private area
+			redirect('dash/success', 'refresh');
+		}
+	}
 }

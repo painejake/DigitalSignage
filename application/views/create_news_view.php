@@ -1,6 +1,9 @@
                 <h2 class="sub-header">Create a News Post</h2>
+
+                <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
+                
                 <div>
-                    <?php echo form_open('home/create_news') ?>
+                    <?php echo form_open('dash/create_news') ?>
 
                         <p><input class="form-control" type="input" name="title" value="<?php echo set_value('title'); ?>" placeholder="News Title" /></p>
                         <p><textarea class="form-control" rows="15" name="content" value="<?php echo set_value('content'); ?>" placeholder="News Content"></textarea></p>
