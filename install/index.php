@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(E_NONE); //Setting this to E_ALL showed that that cause of not redirecting were few blank lines added in some php files.
+error_reporting(0); //Setting this to E_ALL showed that that cause of not redirecting were few blank lines added in some php files.
 
 $db_config_path = '../application/config/database.php';
 
@@ -44,73 +44,68 @@ if($_POST) {
 }
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../favicon.ico">
 
-		<title>Install | Your App</title>
+    <title>Signin Template for Bootstrap</title>
 
-		<style type="text/css">
-		  body {
-		    font-size: 75%;
-		    font-family: Helvetica,Arial,sans-serif;
-		    width: 300px;
-		    margin: 0 auto;
-		  }
-		  input, label {
-		    display: block;
-		    font-size: 18px;
-		    margin: 0;
-		    padding: 10px;
-		    border-radius:10px;
-		  }
-		  label {
-		    margin-top: 20px;
-		  }
-		  input.input_text {
-		    width: 270px;
-		  }
-		  input#submit {
-		    margin: 25px auto 0;
-		    font-size: 25px;
-		  }
-		  fieldset {
-		    padding: 15px;
-		    border-radius:10px;
-		  }
-		  legend {
-		    font-size: 18px;
-		    font-weight: bold;
-		  }
-		  .error {
-		    background: #ffd1d1;
-		    border: 1px solid #ff5858;
-        padding: 4px;
-		  }
-		</style>
-	</head>
-	<body>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <center><h1>Install</h1></center>
-    <?php if(is_writable($db_config_path)){?>
+    <!-- Custom styles for this template -->
+    <link href="../css/install.css" rel="stylesheet">
 
-		  <?php if(isset($message)) {echo '<p class="error">' . $message . '</p>';}?>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-		  <form id="install_form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <fieldset>
-          <legend>Database settings</legend>
-          <label for="hostname">Hostname</label><input type="text" id="hostname" value="localhost" class="input_text" name="hostname" />
-          <label for="username">Username</label><input type="text" id="username" class="input_text" name="username" />
-          <label for="password">Password</label><input type="password" id="password" class="input_text" name="password" />
-          <label for="database">Database Name</label><input type="text" id="database" class="input_text" name="database" />
-          <input type="submit" value="Install" id="submit" />
-        </fieldset>
-		  </form>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+    	<?php if(is_writable($db_config_path)){?>
+
+		<?php if(isset($message)) {echo '<p class="error">' . $message . '</p>';}?>
+
+		<form id="install_form" class="form-signin" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
+			<h2 class="form-signin-heading">Installation <small>MySQL Settings</small></h2>
+
+			<p>Your username and password for the dashboard will be <strong>admin</strong> and <strong>password</strong> when the installation in complete.</p>
+			<div class="alert alert-info text-center"><p>Please delete the install folder after installation.</p></div>
+
+			<p><input type="text" id="hostname" value="localhost" class="form-control" name="hostname" placeholder="MySQL Hostname" required></p>
+			<p><input type="text" id="username" class="form-control" name="username" placeholder="MySQL Username" autocomplete="off" required autofocus></p>
+			<p><input type="password" id="password" class="form-control" name="password" placeholder="MySQL Password" autocomplete="off" required></p>
+			<p><input type="text" id="database" class="form-control" name="database" placeholder="MySQL Database" autocomplete="off" required></p>
+			<button class="btn btn-lg btn-primary btn-block" type="submit" value="Install">Install</button>
+
+		</form>
+
+		<hr>
+
+		<p class="text-center"><a href="https://github.com/painejake/DigitalSignage">DigitalSignage on Github</a></p>
 
 	  <?php } else { ?>
       <p class="error">Please make the application/config/database.php file writable. <strong>Example</strong>:<br /><br /><code>chmod 777 application/config/database.php</code></p>
 	  <?php } ?>
+    
+    </div> <!-- /container -->
 
-	</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
 </html>
