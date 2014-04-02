@@ -30,11 +30,12 @@ class Home extends CI_Controller {
 		} else {
 			$this->home_model->create_news_entry();
 
-			if ($this->home_model->create_news_entry() == FALSE) {
-				redirect('dash/fail', 'refresh');
-			} else {
-				redirect('dash/success', 'refresh');
-			}
+			//if ($this->home_model->create_news_entry() == FALSE) {
+			//	redirect('dash/fail', 'refresh');
+			//} else {
+			//	redirect('dash/success', 'refresh');
+			//}
+			redirect('dash/success', 'refresh');
 		}
 	}
 
