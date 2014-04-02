@@ -1,5 +1,5 @@
 
 .DS_Store
 
-release/application/config/database.php
-release/application/logs/*.php
+application/config/database.php
+application/logs/
