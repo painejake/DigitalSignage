@@ -118,3 +118,7 @@ body {
 .limit-width {
   width: 280px !important;
 }
+
+.editor {
+  padding-bottom: 10px;
+}
