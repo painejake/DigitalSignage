@@ -24,17 +24,19 @@ class Settings extends CI_Controller {
 	}
 
 	public function update() {
-		$this->load->model('Settings_model'); 
+		$this->load->model('settings_model'); 
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 
-		$this->form_validation->set_rules('num_news_posts', 'num_news_posts', 'required');
-		$this->form_validation->set_rules('num_events_posts', 'num_events_posts', 'required');
-		$this->form_validation->set_rules('refresh_time', 'refresh_time', 'required');
-		$this->form_validation->set_rules('facebook_pagename', 'facebook_pagename', 'required');
-		$this->form_validation->set_rules('twitter_username', 'twitter_username', 'required');
-		$this->form_validation->set_rules('twitter_data_id', 'twitter_data_id', 'required');
-		$this->form_validation->set_rules('show_help_link', 'show_help_link');
+		$this->form_validation->set_rules('num_news_posts', 'total news posts', 'trim|required');
+		$this->form_validation->set_rules('num_events_posts', 'total event posts', 'trim|required');
+		$this->form_validation->set_rules('refresh_time', 'refresh time', 'trim|numeric|required');
+		$this->form_validation->set_rules('facebook_pagename', 'facebook pagename', 'trim|required');
+		$this->form_validation->set_rules('twitter_username', 'twitter username', 'trim|required');
+		$this->form_validation->set_rules('twitter_data_id', 'twitter data id', 'trim|required');
+		$this->form_validation->set_rules('show_help_link', 'help link', 'trim|required');
+		$this->form_validation->set_rules('feed_channel', 'feed channel', 'trim|required');
+		$this->form_validation->set_rules('time_zone', 'time zone', 'trim|required');
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');

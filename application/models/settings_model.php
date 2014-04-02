@@ -10,9 +10,9 @@ Class Settings_model extends CI_Model {
 		$facebook_pagename		= $this->input->post('facebook_pagename');
 		$twitter_username		= $this->input->post('twitter_username');
 		$twitter_data_id		= $this->input->post('twitter_data_id');
-		$show_help_link			= $this->input->post('$show_help_link');
-		$feed_channel			= $this->input->post('$feed_channel');
-		$time_zone				= $this->input->post('$time_zone');
+		$show_help_link			= $this->input->post('show_help_link');
+		$feed_channel			= $this->input->post('feed_channel');
+		$time_zone				= $this->input->post('time_zone');
 
 		$this->db->query("UPDATE `settings` SET `value` = '$num_news_posts' WHERE `setting` = 'num_news_posts';");
 		$this->db->query("UPDATE `settings` SET `value` = '$num_events_posts' WHERE `setting` = 'num_events_posts';");

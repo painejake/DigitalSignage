@@ -70,6 +70,8 @@ function timezone_list() {
                 
                 <?php echo form_open('settings/update') ?>
 
+                <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
+
                 <p>Total posts to display:<br />
                 <input class="form-control limit-width" type="text" name="num_news_posts" value="<?php echo $num_news_posts ?>" /></p>
 
