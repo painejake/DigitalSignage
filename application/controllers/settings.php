@@ -39,6 +39,7 @@ class Settings extends CI_Controller {
 		$this->form_validation->set_rules('time_zone', 'time zone', 'trim|required');
 		$this->form_validation->set_rules('latest_news_title', 'latest news title', 'trim|required');
 		$this->form_validation->set_rules('latest_events_title', 'latest events title', 'trim|required');
+		$this->form_validation->set_rules('show_upcoming_event', 'show upcoming event', 'trim|required');
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');

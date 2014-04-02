@@ -1,43 +1,67 @@
-        <?php
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'facebook_pagename' LIMIT 1");
+<?php
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'facebook_pagename' LIMIT 1");
 
-        foreach ($s_q->result() as $row) {
-           $facebook_pagename = $row->value;
-        }
+foreach ($s_q->result() as $row) {
+   $facebook_pagename = $row->value;
+}
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_username' LIMIT 1");
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_username' LIMIT 1");
 
-        foreach ($s_q->result() as $row) {
-           $twitter_username = $row->value;
-        }
+foreach ($s_q->result() as $row) {
+   $twitter_username = $row->value;
+}
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_data_id' LIMIT 1");
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'twitter_data_id' LIMIT 1");
 
-        foreach ($s_q->result() as $row) {
-           $twitter_data_id = $row->value;
-        }
+foreach ($s_q->result() as $row) {
+   $twitter_data_id = $row->value;
+}
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_news_posts' LIMIT 1");
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_news_posts' LIMIT 1");
 
-        foreach ($s_q->result() as $row) {
-           $num_news_posts = $row->value;
-        }
+foreach ($s_q->result() as $row) {
+   $num_news_posts = $row->value;
+}
 
-        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_events_posts' LIMIT 1");
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'num_events_posts' LIMIT 1");
 
-        foreach ($s_q->result() as $row) {
-           $num_events_posts = $row->value;
-        }
-        ?>
+foreach ($s_q->result() as $row) {
+   $num_events_posts = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'latest_news_title' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $latest_news_title = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'latest_events_title' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $latest_events_title = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'show_upcoming_event' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $show_upcoming_event = $row->value;
+}
+?>
 
         <?php foreach ($events as $events_item): ?>
         <?php $latest_date = date("l jS \of F Y", strtotime($events_item['date'])); ?>
 
         <header>
-            <div class="latest-event">
+            <?php if ($show_upcoming_event == 1) {
+                echo '<div class="latest-event">';
+                echo '<h4>Upcoming Event</h4>';
+                echo '<p>' . $events_item['event'] . ' - ' . $latest_date . '</p>';
+                echo '</div>';
+                } else{}; ?>
+            <!--<div class="latest-event">
                 <h4>Upcoming Event</h4>
                 <p><?php echo $events_item['event'] ?> - <?php echo $latest_date ?></p>
-            </div>
+            </div>-->
         </header>
 
         <?php break ?>
@@ -50,7 +74,7 @@
                 <img src="<?php echo base_url(); ?>img/slide3.jpg" width="995" height="210" alt="Slideshow" />
             </div>
             <article class="dates">
-                <h3>Latest from the Student Bulletin...</h3>
+                <h3><?php echo $latest_news_title; ?></h3>
                 <hr>
                 <div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
                     <div id="vmarquee" style="position: absolute; width: 98%;">

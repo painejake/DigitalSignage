@@ -66,6 +66,12 @@ foreach ($s_q->result() as $row) {
    $latest_events_title = $row->value;
 }
 
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'show_upcoming_event' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $show_upcoming_event = $row->value;
+}
+
 function timezone_list() {
     $zones_array = array();
 
@@ -120,13 +126,19 @@ function timezone_list() {
 
                 <hr>
 
-                <h2>Interface Settings</h2>
+                <h2>Frontend Settings</h2>
 
-                <p>Latest News Title<br />
+                <p>Latest news title<br />
                 <input class="form-control limit-width" type="text" name="latest_news_title" value="<?php echo $latest_news_title; ?>" /></p>
 
-                <p>Latest Events Title<br />
+                <p>Latest events title<br />
                 <input class="form-control limit-width" type="text" name="latest_events_title" value="<?php echo $latest_events_title; ?>" /></p>
+
+                <p>Show the upcoming event:<br />
+                <select name="show_upcoming_event" class="form-control limit-width">
+                    <option value="0" <?php if ($show_upcoming_event == '0') : echo "selected"; endif; ?>>Don't Show</option>
+                    <option value="1" <?php if ($show_upcoming_event == '1') : echo "selected"; endif; ?>>Show</option>
+                </select></p>
 
                 <hr>
 
