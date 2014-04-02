@@ -21,6 +21,12 @@ class Dash extends CI_Controller {
 		$this->load->view('template/dashboard/footer');
 	}
 
+	public function success() {
+		$this->load->view('template/dashboard/header');
+		$this->load->view('success_view');
+		$this->load->view('template/dashboard/footer');
+	}
+
     private function check_session(){
         if(! $this->session->userdata('logged_in')){
             redirect('login');

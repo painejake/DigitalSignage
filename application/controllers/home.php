@@ -18,9 +18,6 @@ class Home extends CI_Controller {
 	}
 
 	public function create_news() {
-		$this->load->helper('form');
-		$this->load->library('form_validation');
-		$this->load->model('home_model'); 
 
 		$this->form_validation->set_rules('title', 'title', 'required');
 		$this->form_validation->set_rules('content', 'content', 'required');
@@ -28,32 +25,30 @@ class Home extends CI_Controller {
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
+			$this->load->view('create_news_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_news_entry();
 			
 			//go private area
-			redirect('create/news', 'refresh');
+			redirect('dash/success', 'refresh');
 		}
 	}
 
 	public function create_events() {
-		$this->load->helper('form');
-		$this->load->library('form_validation');
 
 		$this->form_validation->set_rules('event', 'event', 'required');
 		$this->form_validation->set_rules('date', 'date', 'required');
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
-			$this->load->view('create_view');
+			$this->load->view('create_events_view');
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_events_entry();
 
 			//go private area
-			redirect('create/events', 'refresh');
+			redirect('dash/success', 'refresh');
 		}
 	}
 
@@ -61,14 +56,14 @@ class Home extends CI_Controller {
 		$this->load->database();
   		$this->db->delete('news', array('id' => $id));
 
-  		redirect('dash', 'refresh');
+		redirect('dash/success', 'refresh');
 	}
 
 	public function delete_dates($id) {
 		$this->load->database();
   		$this->db->delete('dates', array('id' => $id));
 
-  		redirect('dash', 'refresh');
+  		redirect('dash/success', 'refresh');
 	}
 
 	public function edit_news($id) {
