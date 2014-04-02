@@ -1,5 +1,21 @@
 
-.DS_Store
+Thumbs.db
+ehthumbs.db
 
-application/config/database.php
-application/logs/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Icon
+
+._*
+
+.Spotlight-V100
+.Trashes
+
+*/config/development
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+*/cache/!.htaccess
