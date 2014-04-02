@@ -27,4 +27,26 @@ class Home_model extends CI_Model {
 		$q = $this->db->query("SELECT * FROM dates WHERE `date` >= '$curr_date' ORDER BY id ASC");
 		return $q->result_array();
 	}
+
+	public function create_news_entry() {
+
+		$data = array(
+			'title'			=> $this->input->post('title'),
+			'content'		=> $this->input->post('content'),
+			'author'		=> $this->input->post('author')
+			);
+
+		return $this->db->insert('news', $data);
+	}
+
+	public function create_events_entry() {
+
+		$event_data = array(
+			'event'			=> $this->input->post('event'),
+			'date'			=> $this->input->post('date'),
+			'time'			=> $this->input->post('time')
+			);
+
+		return $this->db->insert('dates', $event_data);
+	}
 }
