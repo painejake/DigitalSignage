@@ -29,9 +29,12 @@ class Home extends CI_Controller {
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->create_news_entry();
-			
-			//go private area
-			redirect('dash/success', 'refresh');
+
+			if ($this->home_model->create_news_entry() == FALSE) {
+				redirect('dash/fail', 'refresh');
+			} else {
+				redirect('dash/success', 'refresh');
+			}
 		}
 	}
 

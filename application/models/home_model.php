@@ -36,7 +36,7 @@ class Home_model extends CI_Model {
 			'author'		=> $this->input->post('author')
 			);
 
-		return $this->db->insert('news', $data);
+		return $this->db->insert('news', $data) ? true : false;
 	}
 
 	public function create_events_entry() {
@@ -47,6 +47,7 @@ class Home_model extends CI_Model {
 			'time'			=> $this->input->post('time')
 			);
 
-		return $this->db->insert('dates', $event_data);
+		return $this->db->insert('dates', $event_data) ? true : false;
+
 	}
 }

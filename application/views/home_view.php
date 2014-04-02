@@ -81,7 +81,11 @@ foreach ($s_q->result() as $row) {
                         <ul>
                             <?php foreach ($news as $news_item): ?>
                             <?php $i = 0; ?>
-                                <li><strong><?php echo $news_item['title'] ?></strong> - <?php echo $news_item['content'] ?></li><br />
+                            
+                                <li><strong><?php echo $news_item['title'] ?></strong></li>
+
+                                <li><?php echo auto_typography($news_item['content']); ?></li><br />
+
                             <?php $i++; ?>
                             <?php if ($i == $num_news_posts) break; ?>
                             <?php endforeach ?>
