@@ -35,7 +35,8 @@ class Home extends CI_Controller {
 			//} else {
 			//	redirect('dash/success', 'refresh');
 			//}
-			redirect('dash/success', 'refresh');
+			$this->session->set_flashdata('msg', 'The news post was added successfully!');
+			redirect('dash', 'refresh');
 		}
 	}
 
@@ -52,7 +53,8 @@ class Home extends CI_Controller {
 			$this->home_model->create_events_entry();
 
 			//go private area
-			redirect('dash/success', 'refresh');
+			$this->session->set_flashdata('msg', 'The event was added successfully!');
+			redirect('dash', 'refresh');
 		}
 	}
 
@@ -60,14 +62,18 @@ class Home extends CI_Controller {
 		$this->load->database();
   		$this->db->delete('news', array('id' => $id));
 
-		redirect('dash/success', 'refresh');
+  		$this->session->set_flashdata('msg', 'The news post was deleted successfully!');
+
+		redirect('dash', 'refresh');
 	}
 
 	public function delete_dates($id) {
 		$this->load->database();
   		$this->db->delete('dates', array('id' => $id));
 
-  		redirect('dash/success', 'refresh');
+  		$this->session->set_flashdata('msg', 'The event was deleted successfully!');
+
+  		redirect('dash', 'refresh');
 	}
 
 	public function edit_news($id) {

@@ -1,5 +1,10 @@
+                <?php
+                if($this->session->flashdata('msg')) {
+                    echo '<div class="alert alert-success">' . $this->session->flashdata('msg') . '</div>';
+                    } ?>
 
                 <h2 class="sub-header">News Items</h2>
+
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>

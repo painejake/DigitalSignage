@@ -44,7 +44,6 @@
             wrap_text("editor", "<u>", "</u>");
         });
 
-
     </script>
     
     </body>
