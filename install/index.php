@@ -33,8 +33,10 @@ if($_POST) {
 		  $redir = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
       $redir .= "://".$_SERVER['HTTP_HOST'];
       $redir .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-      $redir = str_replace('install/','',$redir); 
-			header( 'Location: ' . $redir . 'welcome' ) ;
+      $redir = str_replace('install/','',$redir);
+      		// sleep to allow querys to complete
+      		sleep(2); 
+			header( 'Location: ' . $redir . 'index.php/dash' );
 		}
 
 	}
@@ -87,7 +89,7 @@ if($_POST) {
 			<p><input type="text" id="username" class="form-control" name="username" placeholder="MySQL Username" autocomplete="off" required autofocus></p>
 			<p><input type="password" id="password" class="form-control" name="password" placeholder="MySQL Password" autocomplete="off" required></p>
 			<p><input type="text" id="database" class="form-control" name="database" placeholder="MySQL Database" autocomplete="off" required></p>
-			<button class="btn btn-lg btn-primary btn-block" type="submit" value="Install">Install</button>
+			<button onclick="return confirm('This will drop the current signage tables. Continue?');" class="btn btn-lg btn-primary btn-block" type="submit" value="Install">Install</button>
 
 		</form>
 

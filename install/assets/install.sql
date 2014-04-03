@@ -23,6 +23,12 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Drop tables
+--
+
+DROP TABLE `dates`, `news`, `settings`, `users`;
+
+--
 -- Table structure for table `dates`
 --
 
