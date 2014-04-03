@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jake Paine -- Developer -- @painejake
 
 # THANKS
 
-    <name>
+    Bootstrap, CodeIgniter
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
+    PHP, CodeIgniter
