@@ -61,7 +61,7 @@
                                 <td><?php echo $events_item['date'] ?></td>
                                 <td><?php echo $events_item['time'] ?></td>
                                 <td>
-                                    <a href="#">
+                                    <a href="home/edit_event/<?php echo $events_item['id'] ?>">
                                         <button type="button" class="btn btn-primary btn-sm">Edit</button>
                                     </a>
                                 </td>

@@ -87,7 +87,23 @@ class Home extends CI_Controller {
 		$this->load->view('template/dashboard/header');
 		$this->load->view('edit_news_view', $data);
 		$this->load->view('template/dashboard/footer');
-	} 
+	}
+
+	public function edit_event($id) {
+
+		$q = $this->db->query("SELECT * FROM `dates` WHERE `id` = $id");
+		
+		foreach ($q->result_array() as $row) {
+			$data['id'] = $row['id'];
+			$data['event'] = $row['event'];
+			$data['date'] = $row['date'];
+			$data['time'] = $row['time'];
+		}
+
+		$this->load->view('template/dashboard/header');
+		$this->load->view('edit_event_view', $data);
+		$this->load->view('template/dashboard/footer');
+	}
 
 	public function update_news() {
 
@@ -102,6 +118,25 @@ class Home extends CI_Controller {
 			$this->load->view('template/dashboard/footer');
 		} else {
 			$this->home_model->update_news_entry();
+
+			$this->session->set_flashdata('msg', 'The news post was updated successfully!');
+			redirect('dash', 'refresh');
+		}	
+	}
+
+	public function update_event() {
+
+		$this->form_validation->set_rules('id', 'id', 'trim|required');
+		$this->form_validation->set_rules('event', 'event', 'trim|required');
+		$this->form_validation->set_rules('date', 'date', 'required');
+		$this->form_validation->set_rules('time', 'time', 'trim|required');
+
+		if ($this->form_validation->run() === FALSE) {
+			$this->load->view('template/dashboard/header');
+			$this->load->view('edit_news_view', $data);
+			$this->load->view('template/dashboard/footer');
+		} else {
+			$this->home_model->update_event_entry();
 
 			$this->session->set_flashdata('msg', 'The news post was updated successfully!');
 			redirect('dash', 'refresh');
