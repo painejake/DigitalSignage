@@ -34,13 +34,11 @@
 | the active record class
 */
 
-// The following values will probably need to be changed.
 $db['default']['username'] = "root";
 $db['default']['password'] = "root";
 $db['default']['database'] = "signage";
-
-// The following values can probably stay the same.
 $db['default']['hostname'] = "localhost";
+
 $db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "";
 $db['default']['pconnect'] = TRUE;

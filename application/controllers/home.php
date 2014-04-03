@@ -138,7 +138,7 @@ class Home extends CI_Controller {
 		} else {
 			$this->home_model->update_event_entry();
 
-			$this->session->set_flashdata('msg', 'The news post was updated successfully!');
+			$this->session->set_flashdata('msg', 'The event was updated successfully!');
 			redirect('dash', 'refresh');
 		}	
 	}
