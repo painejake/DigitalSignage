@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '8a9827349h2347623d78123fa8234';
+$config['encryption_key'] = 'X274WCJNXz57Nor6X6S9Na7LPGg71a1G';
 
 /*
 |--------------------------------------------------------------------------
@@ -245,7 +245,7 @@ $config['encryption_key'] = '8a9827349h2347623d78123fa8234';
 |
 */
 $config['sess_cookie_name']		= 'session';
-$config['sess_expiration']		= 1800;
+$config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= TRUE;
 $config['sess_use_database']	= TRUE;

@@ -48,6 +48,20 @@ class Home_model extends CI_Model {
 			);
 
 		return $this->db->insert('dates', $event_data) ? true : false;
+	}
 
+	public function update_news_entry() {
+
+		$data = array(
+			'id'			=> $this->input->post('id'),
+			'title'			=> $this->input->post('title'),
+			'content'		=> $this->input->post('content'),
+			'author'		=> $this->input->post('author')
+			);
+
+		$id = $data['id'];
+
+		$this->db->where('id', $id);
+		return $this->db->update('news', $data);
 	}
 }
