@@ -46,6 +46,25 @@ $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'show_upco
 foreach ($s_q->result() as $row) {
    $show_upcoming_event = $row->value;
 }
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'slide1_url' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $slide1_url = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'slide2_url' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $slide2_url = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'slide3_url' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $slide3_url = $row->value;
+}
+
 ?>
 
         <?php foreach ($events as $events_item): ?>
@@ -69,9 +88,9 @@ foreach ($s_q->result() as $row) {
 
         <section class="wrap">
             <div class="slideshow">
-                <img src="<?php echo base_url(); ?>img/slide1.jpg" width="995" height="210" alt="Slideshow" />
-                <img src="<?php echo base_url(); ?>img/slide2.jpg" width="995" height="210" alt="Slideshow" />
-                <img src="<?php echo base_url(); ?>img/slide3.jpg" width="995" height="210" alt="Slideshow" />
+                <img src="<?php echo $slide1_url; ?>" width="995" height="210" alt="Slideshow" />
+                <img src="<?php echo $slide2_url; ?>" width="995" height="210" alt="Slideshow" />
+                <img src="<?php echo $slide3_url; ?>" width="995" height="210" alt="Slideshow" />
             </div>
             <article class="dates">
                 <h3><?php echo $latest_news_title; ?></h3>

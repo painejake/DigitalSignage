@@ -19,6 +19,11 @@ Class Settings_model extends CI_Model {
 		$latest_events_title	= $this->input->post('latest_events_title');
 		$show_upcoming_event	= $this->input->post('show_upcoming_event');
 
+		$slide1_url				= $this->input->post('slide1_url');
+		$slide2_url				= $this->input->post('slide2_url');
+		$slide3_url				= $this->input->post('slide3_url');
+		$cycle_time				= $this->input->post('cycle_time');
+
 		$this->db->query("UPDATE `settings` SET `value` = '$num_news_posts' WHERE `setting` = 'num_news_posts';");
 		$this->db->query("UPDATE `settings` SET `value` = '$num_events_posts' WHERE `setting` = 'num_events_posts';");
 		$this->db->query("UPDATE `settings` SET `value` = '$refresh_time' WHERE `setting` = 'refresh_time';");
@@ -33,5 +38,10 @@ Class Settings_model extends CI_Model {
 		$this->db->query("UPDATE `settings` SET `value` = '$latest_news_title' WHERE `setting` = 'latest_news_title';");
 		$this->db->query("UPDATE `settings` SET `value` = '$latest_events_title' WHERE `setting` = 'latest_events_title';");
 		$this->db->query("UPDATE `settings` SET `value` = '$show_upcoming_event' WHERE `setting` = 'show_upcoming_event';");
+
+		$this->db->query("UPDATE `settings` SET `value` = '$slide1_url' WHERE `setting` = 'slide1_url';");
+		$this->db->query("UPDATE `settings` SET `value` = '$slide2_url' WHERE `setting` = 'slide2_url';");
+		$this->db->query("UPDATE `settings` SET `value` = '$slide3_url' WHERE `setting` = 'slide3_url';");
+		$this->db->query("UPDATE `settings` SET `value` = '$cycle_time' WHERE `setting` = 'cycle_time';");
 	}
 }

@@ -16,9 +16,23 @@
 
         foreach ($s_q->result() as $row) {
            $feed_channel = $row->value;
+       }
+
+        $s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'cycle_time' LIMIT 1");
+
+        foreach ($s_q->result() as $row) {
+           $cycle_time = $row->value;
         } ?>
 
         <script type="text/javascript">
+
+        jQuery(document).ready(function() {
+            jQuery('.slideshow').cycle({
+                fx: 'fade',
+                delay: <?php echo $cycle_time ?>
+                
+            });
+        });
 
             dp.SyntaxHighlighter.HighlightAll('onceCode');
             var width = 420;

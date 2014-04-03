@@ -22,9 +22,6 @@
 }());
 
 // Place any jQuery/helper plugins in here.
- jQuery(document).ready(function() {
-           jQuery('.slideshow').cycle({ fx: 'fade' });
- });
 
 var delayb4scroll=1000      // Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
 var marqueespeed=1          // Specify marquee scroll speed (larger is faster 1-10)
