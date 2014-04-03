@@ -98,8 +98,8 @@ foreach ($s_q->result() as $row) {
                 <div id="marqueecontainer" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed">
                     <div id="vmarquee" style="position: absolute; width: 98%;">
                         <ul>
-                            <?php foreach ($news as $news_item): ?>
                             <?php $i = 0; ?>
+                            <?php foreach ($news as $news_item): ?>
                             
                                 <li><strong><?php echo $news_item['title'] ?></strong></li>
 
@@ -135,11 +135,12 @@ foreach ($s_q->result() as $row) {
                 <div class="news-image"></div>
                 <div class="news-items">
 	                <ul>
-                        <?php foreach ($events as $events_item): ?>
                         <?php $i = 0; ?>
+                        <?php foreach ($events as $events_item): ?>
                             <li><?php echo $events_item['event'] ?> / <?php echo $events_item['date'] ?> <?php if ($events_item['time'] = '') { } else { echo '/ '; echo $events_item['time']; } ?></li>
+
                         <?php $i++; ?>
-                        <?php if ($i == $num_events_posts) break; ?>
+                        <?php if ($i >= $num_events_posts) break; ?>
                         <?php endforeach ?>
 
 	                </ul>
