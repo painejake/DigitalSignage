@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.6
+-- version 4.0.6deb1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 03, 2014 at 10:56 AM
--- Server version: 5.6.16
--- PHP Version: 5.5.9
+-- Host: localhost
+-- Generation Time: Apr 03, 2014 at 10:15 PM
+-- Server version: 5.5.35-0ubuntu0.13.10.2
+-- PHP Version: 5.5.3-1ubuntu2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `news` (
 INSERT INTO `news` (`id`, `title`, `content`, `date`, `author`) VALUES
 (1, 'Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta dolor vitae iaculis consequat. Integer dapibus volutpat odio a aliquam. Aliquam erat volutpat. Quisque sit amet risus quis metus rutrum tincidunt viverra quis diam. Fusce imperdiet vitae nunc et aliquam.', '2013-09-06 13:21:47', 'Admin'),
 (2, 'Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta dolor vitae iaculis consequat. Integer dapibus volutpat odio a aliquam. Aliquam erat volutpat. Quisque sit amet risus quis metus rutrum tincidunt viverra quis diam. Fusce imperdiet vitae nunc et aliquam.', '2013-09-06 13:21:56', 'Admin'),
-(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta dolor vitae iaculis consequat. Integer dapibus volutpat odio a aliquam. Aliquam erat volutpat. Quisque sit amet risus quis metus rutrum tincidunt viverra quis diam. Fusce imperdiet vitae nunc et aliquam.', '2013-09-06 13:21:59', 'Admin');
+(3, 'Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta dolor vitae iaculis consequat. Integer dapibus volutpat odio a aliquam. Aliquam erat volutpat.\n\nQuisque sit amet risus quis metus rutrum tincidunt viverra quis diam. Fusce imperdiet vitae. Consectetur adipiscing elit. Morbi porta dolor vitae iaculis consequat. Integer dapibus volutpat odio a aliquam. Aliquam erat volutpat.', '2013-09-06 13:21:59', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -94,6 +94,13 @@ CREATE TABLE IF NOT EXISTS `sessions` (
   KEY `last_activity_idx` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `sessions`
+--
+
+INSERT INTO `sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
+('273b1960e307584e58a24bd8de6c7422', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.149 Safari/537.36', 1396563258, 'a:3:{s:9:"user_data";s:0:"";s:9:"logged_in";a:2:{s:9:"user_name";s:5:"admin";s:9:"logged_in";b:1;}s:13:"flash:old:msg";s:39:"The settings were updated successfully!";}');
+
 -- --------------------------------------------------------
 
 --
@@ -106,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `settings` (
   `setting` text COLLATE utf8_bin NOT NULL,
   `value` text COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `settings`
@@ -124,7 +131,11 @@ INSERT INTO `settings` (`id`, `setting`, `value`) VALUES
 (9, 'show_help_link', '1'),
 (10, 'latest_news_title', 'Latest From The Bulletin'),
 (11, 'latest_events_title', 'Upcoming Events'),
-(12, 'show_upcoming_event', '1');
+(12, 'show_upcoming_event', '1'),
+(13, 'slide1_url', 'http://localhost/DigitalSignage/img/slide1.jpg'),
+(14, 'slide2_url', 'http://localhost/DigitalSignage/img/slide2.jpg'),
+(15, 'slide3_url', 'http://localhost/DigitalSignage/img/slide3.jpg'),
+(16, 'cycle_time', '3000');
 
 -- --------------------------------------------------------
 
