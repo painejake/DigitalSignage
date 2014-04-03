@@ -52,6 +52,7 @@ foreach ($s_q->result() as $row) {
                     <li><a href="<?php echo site_url("dash"); ?>">Dashboard</a></li>
                     <li><a href="<?php echo site_url("settings"); ?>">Settings</a></li>
                     <li><a href="<?php echo site_url("profile"); ?>">Profile</a></li>
+                    <li><a href="<?php echo site_url("/"); ?>">Preview</a></li>
                     <?php if ($show_help_link == 1)  : echo '<li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>'; endif; ?>
 
                     <li><a href="<?php echo site_url("logout"); ?>">Logout</a></li>
@@ -75,6 +76,7 @@ foreach ($s_q->result() as $row) {
                     <li <?php if (current_url() == site_url("profile"))  : echo 'class="active"'; endif; ?>><a href="<?php echo site_url("profile"); ?>">Profile</a></li>
                 </ul>
                 <ul class="nav nav-sidebar">
+                    <li><a href="<?php echo site_url("/"); ?>">Preview</a></li>
                     <?php if ($show_help_link == 1)  : echo '<li><a href="https://github.com/painejake/DigitalSignage/issues">Help</a></li>'; endif; ?>
                     
                 </ul>
