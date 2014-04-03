@@ -14,7 +14,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php $i = 0; ?>
                             <?php foreach ($news as $news_item): ?><tr>
                                 <td><?php echo $news_item['id'] ?></td>
                                 <td><?php echo $news_item['title'] ?></td>
