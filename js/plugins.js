@@ -41,6 +41,29 @@ else
     cross_marquee.style.top=parseInt(marqueeheight)+8+"px"
 }
 
+function wrapText(elementID, openTag, closeTag) {
+    var textArea = $('#' + elementID);
+    var len = textArea.val().length;
+    var start = textArea[0].selectionStart;
+    var end = textArea[0].selectionEnd;
+    var selectedText = textArea.val().substring(start, end);
+    var replacement = openTag + selectedText + closeTag;
+    textArea.val(textArea.val().substring(0, start) + replacement + textArea.val().substring(end, len));
+}
+
+$('#bold').click(function() {
+    wrapText("myTa", "<strong>", "</strong>");
+});
+$('#italic').click(function() {
+    wrapText("myTa", "<em>", "</em>");
+});
+$('#underline').click(function() {
+    wrapText("myTa", "<u>", "</u>");
+});
+$('#code').click(function() {
+    wrapText("myTa", "<pre><code>", "</code></pre>");
+});
+
 function initializemarquee(){
     cross_marquee=document.getElementById("vmarquee")
     cross_marquee.style.top=0
