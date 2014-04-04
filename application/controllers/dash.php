@@ -20,9 +20,4 @@ class Dash extends CI_Controller {
 		$this->load->view('dash_view', $data);
 		$this->load->view('template/dashboard/footer');
 	}
-
-	public function logout() {
-		$this->session->sess_destroy();
-        redirect('login');
-	}
 }
