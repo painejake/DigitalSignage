@@ -34,6 +34,10 @@ class Settings extends CI_Controller {
 		$this->form_validation->set_rules('latest_news_title', 'latest news title', 'trim|required');
 		$this->form_validation->set_rules('latest_events_title', 'latest events title', 'trim|required');
 		$this->form_validation->set_rules('show_upcoming_event', 'show upcoming event', 'trim|required');
+		$this->form_validation->set_rules('slide1_url', 'Slide 1 URL', 'trim|required');
+		$this->form_validation->set_rules('slide2_url', 'Slide 2 URL', 'trim|required');
+		$this->form_validation->set_rules('slide3_url', 'Slide 3 URL', 'trim|required');
+		$this->form_validation->set_rules('cycle_time', 'cycle time', 'trim|required');
 
 		if ($this->form_validation->run() === FALSE) {
 			$this->load->view('template/dashboard/header');
@@ -43,8 +47,8 @@ class Settings extends CI_Controller {
 
 			$this->settings_model->update_settings();
 
-			//go private area
-			redirect('settings', 'refresh');
+			$this->session->set_flashdata('msg', 'The settings were updated successfully!');
+			redirect('dash', 'refresh');
 		}
 	}
 }

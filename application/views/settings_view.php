@@ -72,6 +72,30 @@ foreach ($s_q->result() as $row) {
    $show_upcoming_event = $row->value;
 }
 
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'slide1_url' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $slide1_url = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'slide2_url' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $slide2_url = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'slide3_url' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $slide3_url = $row->value;
+}
+
+$s_q = $this->db->query("SELECT value FROM settings WHERE `setting` = 'cycle_time' LIMIT 1");
+
+foreach ($s_q->result() as $row) {
+   $cycle_time = $row->value;
+}
+
 function timezone_list() {
     $zones_array = array();
 
@@ -96,7 +120,7 @@ function timezone_list() {
                 <p>Total events to display:<br />
                 <input class="form-control limit-width" type="text" name="num_events_posts" value="<?php echo $num_events_posts; ?>" /></p>
 
-                <p>Refresh time:<br />
+                <p>Refresh time (milliseconds):<br />
                 <input class="form-control limit-width" type="text" name="refresh_time" value="<?php echo $refresh_time; ?>" /></p>
 
                 <p>Time zone:<br />
@@ -139,6 +163,22 @@ function timezone_list() {
                     <option value="0" <?php if ($show_upcoming_event == '0') : echo "selected"; endif; ?>>Don't Show</option>
                     <option value="1" <?php if ($show_upcoming_event == '1') : echo "selected"; endif; ?>>Show</option>
                 </select></p>
+
+                <hr>
+
+                <h2>jQuery Slideshow Settings</h2>
+
+                <p>Slide 1 URL:<br />
+                <input class="form-control limit-width" type="text" name="slide1_url" value="<?php echo $slide1_url; ?>" /></p>
+
+                <p>Slide 2 URL:<br />
+                <input class="form-control limit-width" type="text" name="slide2_url" value="<?php echo $slide2_url; ?>" /></p>
+
+                <p>Slide 3 URL:<br />
+                <input class="form-control limit-width" type="text" name="slide3_url" value="<?php echo $slide3_url; ?>" /></p>
+
+                <p>Cycle time (milliseconds):<br />
+                <input class="form-control limit-width" type="text" name="cycle_time" value="<?php echo $cycle_time; ?>" /></p>
 
                 <hr>
 
