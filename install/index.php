@@ -16,29 +16,28 @@ if($_POST) {
 
 
 	// Validate the post data
-	if($core->validate_post($_POST) == true)
+	if($core->validate_post($_POST) == TRUE)
 	{
-
 		// First create the database, then create tables, then write config file
-		if($database->create_database($_POST) == false) {
-			$message = $core->show_message('error',"The database could not be created, please verify your settings.");
-		} else if ($database->create_tables($_POST) == false) {
-			$message = $core->show_message('error',"The database tables could not be created, please verify your settings.");
-		} else if ($core->write_config($_POST) == false) {
-			$message = $core->show_message('error',"The database configuration file could not be written, please chmod application/config/database.php file to 777");
+		if($database->create_database($_POST) == FALSE) {
+			$message = $core->show_message('error', "The database could not be created, please verify your settings.");
+		} else if ($database->create_tables($_POST) == FALSE) {
+			$message = $core->show_message('error', "The database tables could not be created, please verify your settings.");
+		} else if ($core->write_config($_POST) == FALSE) {
+			$message = $core->show_message('error', "The database configuration file could not be written, please chmod application/config/database.php file to 777");
 		}
 
 		// If no errors, redirect to registration page
 		if(!isset($message)) {
-		  $redir = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
-      $redir .= "://".$_SERVER['HTTP_HOST'];
-      $redir .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-      $redir = str_replace('install/','',$redir);
-      		// sleep to allow querys to complete
-      		sleep(2); 
+			$redir = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+			$redir .= "://".$_SERVER['HTTP_HOST'];
+			$redir .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+			$redir = str_replace('install/','',$redir);
+
+      		// sleep then redirect
+      		sleep(5);
 			header( 'Location: ' . $redir . 'index.php/dash' );
 		}
-
 	}
 	else {
 		$message = $core->show_message('error','Not all fields have been filled in correctly. The host, username, password, and database name are required.');
@@ -89,7 +88,11 @@ if($_POST) {
 			<p><input type="text" id="username" class="form-control" name="username" placeholder="MySQL Username" autocomplete="off" required autofocus></p>
 			<p><input type="password" id="password" class="form-control" name="password" placeholder="MySQL Password" autocomplete="off" required></p>
 			<p><input type="text" id="database" class="form-control" name="database" placeholder="MySQL Database" autocomplete="off" required></p>
-			<button onclick="return confirm('This will drop the current signage tables. Continue?');" class="btn btn-lg btn-primary btn-block" type="submit" value="Install">Install</button>
+			<button id="install" onclick="return confirm('This will drop the current signage tables. Continue?');" class="btn btn-lg btn-primary btn-block" type="submit" value="Install">Install</button>
+			<br />
+			<div class="progress progress-striped active">
+			  <div class="progress-bar" id="progressbar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"> </div>
+			</div>
 
 		</form>
 
@@ -106,5 +109,12 @@ if($_POST) {
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/vendor/jquery-1.9.1.min.js"></script>
+
+    <script>
+    $('#install').click(function(){
+    	$('#progressbar').animate({width:'100%'}, 4500);
+	});
+    </script>
   </body>
 </html>

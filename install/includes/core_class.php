@@ -3,9 +3,8 @@
 class Core {
 
 	// Function to validate the post data
-	function validate_post($data)
-	{
-		/* Validating the hostname, the database name and the username. The password is optional. */
+	function validate_post($data) {
+		// Validating the hostname, the database name and the username. The password is optional.
 		return !empty($data['hostname']) && !empty($data['username']) && !empty($data['database']);
 	}
 
@@ -30,23 +29,22 @@ class Core {
 		$new  = str_replace("%DATABASE%",$data['database'],$new);
 
 		// Write the new database.php file
-		$handle = fopen($output_path,'w+');
+		$handle = fopen($output_path, 'w+');
 
 		// Chmod the file, in case the user forgot
-		@chmod($output_path,0777);
+		@chmod($output_path, 0777);
 
 		// Verify file permissions
 		if(is_writable($output_path)) {
 
 			// Write the file
 			if(fwrite($handle,$new)) {
-				return true;
+				return TRUE;
 			} else {
-				return false;
+				return FALSE;
 			}
-
 		} else {
-			return false;
+			return FALSE;
 		}
 	}
 }

@@ -6,7 +6,9 @@ class Profile extends CI_Controller {
 
 	function __construct(){
         parent::__construct();
-        $this->check_session();
+        
+		// check session to see if user is authenticated
+		$this->user_model->check_session();
     }
 
 	public function index() {
@@ -18,15 +20,8 @@ class Profile extends CI_Controller {
 		$this->load->view('template/dashboard/footer');
 	}
 
-	public function manage() {
+    public function manage() {
 
 		// validate stuff here
 	}
-
-    private function check_session(){
-
-        if(! $this->session->userdata('logged_in')){
-            redirect('login');
-        }
-    }
 }

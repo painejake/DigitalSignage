@@ -17,4 +17,11 @@ Class User_model extends CI_Model {
 			return FALSE;
 		}
 	}
+
+	// check session to see if user is authenticated
+	public function check_session(){
+		if(! $this->session->userdata('logged_in')){
+			redirect('login');
+		}
+	}
 }

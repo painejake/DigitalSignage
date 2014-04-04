@@ -6,9 +6,9 @@ class Create extends CI_Controller {
 
 	function __construct(){
         parent::__construct();
-        $this->check_session();
-        
-        $this->load->model('home_model');
+
+		// check session to see if user is authenticated
+		$this->user_model->check_session();
     }
 
 	public function news() {
@@ -28,12 +28,6 @@ class Create extends CI_Controller {
 		$this->load->view('create_events_view', $data);
 		$this->load->view('template/dashboard/footer');
 	}
-
-    private function check_session(){
-        if(! $this->session->userdata('logged_in')){
-            redirect('login');
-        }
-    }
 
 	public function logout() {
 		$this->session->sess_destroy();

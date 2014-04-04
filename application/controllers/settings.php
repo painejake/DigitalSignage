@@ -6,21 +6,15 @@ class Settings extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->check_session();
 
-		$this->load->model('settings_model');
+		// check session to see if user is authenticated
+		$this->user_model->check_session();
 	}
 
 	public function index() {
 		$this->load->view('template/dashboard/header');
 		$this->load->view('settings_view');
 		$this->load->view('template/dashboard/footer');
-	}
-
-	private function check_session(){
-		if(! $this->session->userdata('logged_in')){
-			redirect('login');
-		}
 	}
 
 	public function update() {

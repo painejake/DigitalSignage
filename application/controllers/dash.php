@@ -6,7 +6,9 @@ class Dash extends CI_Controller {
 
 	function __construct(){
         parent::__construct();
-        $this->check_session();
+
+		// check session to see if user is authenticated
+		$this->user_model->check_session();
     }
 
 	public function index() {
@@ -18,12 +20,6 @@ class Dash extends CI_Controller {
 		$this->load->view('dash_view', $data);
 		$this->load->view('template/dashboard/footer');
 	}
-
-    private function check_session(){
-        if(! $this->session->userdata('logged_in')){
-            redirect('login');
-        }
-    }
 
 	public function logout() {
 		$this->session->sess_destroy();
