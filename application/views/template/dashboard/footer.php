@@ -1,9 +1,8 @@
-                <?php $version = $this->config->item('version'); ?>
                 
                 <footer>
                     <p>Page rendered in {elapsed_time} seconds</p>
                     <p><small>Script memory usage {memory_usage}</small></p>
-                    <p><small><?php echo $version; ?></small></p>
+                    <p><small><?php echo $this->config->item('version'); ?></small></p>
                 </footer>
 
             </div>
